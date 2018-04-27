@@ -18,7 +18,7 @@
     <PackageTags>entlib entlib6 Enterprise Library common core LOB futures OSS</PackageTags>
 
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>Common.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>Common.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
   </PropertyGroup>
 
