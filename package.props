@@ -1,11 +1,7 @@
 <Project>
-
+  <Import Project="version.props" />
+  
   <PropertyGroup>
-    <MajorVersion>6</MajorVersion>
-    <MinorVersion>1</MinorVersion>
-    <ReleaseVersion>1400</ReleaseVersion>
-    <Revision>0</Revision>
-    
     <Version>$(MajorVersion).$(MinorVersion).$(ReleaseVersion)</Version>
     <PackageReleaseNotes>This package is distributed as .NET Standard 2.0, .NET Core 2.0, .NET 4.0, 4.5, 4.6, 4.7 package.</PackageReleaseNotes>
 
