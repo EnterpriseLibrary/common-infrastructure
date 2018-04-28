@@ -33,6 +33,6 @@ after_test:
   - cmd: scripts\UninstallTestAssemblies.bat
 
 on_success:
-  - git status
-  - git commit -am 'Revision update by AppVeyor'
+  - git add version.props
+  - git commit -m "Revision update by AppVeyor"
   - git push --tags --force
