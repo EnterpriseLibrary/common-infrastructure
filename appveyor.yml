@@ -15,6 +15,6 @@ before_build:
 - cmd: dotnet restore
 
 build:
-  project: source\Common.sln
+  project: %APPVEYOR_BUILD_FOLDER%\source\Common.sln
   parallel: true
   verbosity: minimal
