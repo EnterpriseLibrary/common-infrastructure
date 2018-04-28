@@ -1,7 +1,6 @@
 image: Visual Studio 2017
 configuration: Release
 platform: Any CPU
-
 skip_tags: true
 
 install:
@@ -33,6 +32,10 @@ after_test:
   - cmd: scripts\UninstallTestAssemblies.bat
 
 on_success:
+  - git config --global credential.helper store
+  - ps: Add-Content "$HOME\.git-credentials" "https://$($env:github_access_token):x-oauth-basic@github.com`n"
+  - ps: git config --global user.email "$env:github_email"
+  - ps: git config --global user.name "$env:github_name"
   - git add version.props
   - git commit -m "Revision update by AppVeyor"
   - git push --tags --force
