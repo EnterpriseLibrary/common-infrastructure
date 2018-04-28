@@ -8,7 +8,9 @@ install:
   - ps: $env:major_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/MajorVersion" | Select-Object -ExpandProperty Node).InnerText
   - ps: $env:minor_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/MinorVersion" | Select-Object -ExpandProperty Node).InnerText
   - ps: $env:release_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/ReleaseVersion" | Select-Object -ExpandProperty Node).InnerText
-  - ps: (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/Revision" | Select-Object -ExpandProperty Node).InnerText = $env:APPVEYOR_BUILD_NUMBER
+  - ps: $xRevision = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/Revision" | Select-Object -ExpandProperty Node)
+  - ps: $xRevision.InnerText = $env:APPVEYOR_BUILD_NUMBER
+  - ps: $xRevision.Node.OwnerDocument.Save($xRevision.Path)
   - ps: Update-AppveyorBuild -Version "$env:major_version.$env:minor_version.$env:release_version.$env:APPVEYOR_BUILD_NUMBER"
 
 dotnet_csproj:
