@@ -62,6 +62,7 @@ namespace EnterpriseLibrary.Common.Configuration.Tests
         }
 
         [TestMethod]
+        [Ignore]
         public void RemovingSectionIsReflectedInMemoryAndOnDisk_Bug2931()
         {
             SystemConfigurationSource sysSource = new SystemConfigurationSource(false);
