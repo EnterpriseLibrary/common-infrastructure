@@ -21,10 +21,10 @@ build:
 
 after_build:
 - cmd: CD scripts
-- cmd: RegisterAssembliesForTesting.bat
+- cmd: RegisterAssembliesForTesting.bat "..\Source\Tests\Common\bin\Release\net47"
 - cmd: CD..
 
 after_test:
 - cmd: CD scripts
-- cmd: RegisterAssembliesForTesting.bat -u
+- cmd: RegisterAssembliesForTesting.bat -u "..\Source\Tests\Common\bin\Release\net47"
 - cmd: CD..
