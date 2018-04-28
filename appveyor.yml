@@ -15,7 +15,9 @@ install:
   - ps: $xRevision.Node.InnerText = $env:APPVEYOR_BUILD_NUMBER
   - ps: $xRevision.Node.OwnerDocument.Save($xRevision.Path)
   - ps: Write-Host $xRevision.Path
-  - git commit -m 'Revision update by AppVeyor' -- version.props
+  - git checkout master
+  - git add version.props
+  - git commit -m 'Revision update by AppVeyor'
   - git push --tags --force
 
 dotnet_csproj:
