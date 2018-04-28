@@ -30,10 +30,10 @@ after_test:
   - cmd: scripts\UninstallTestAssemblies.bat
 
 on_success:
-  - ps: git checkout master
   - ps: $xRevision = Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/Revision"
   - ps: $xRevision.Node.InnerText = $env:APPVEYOR_BUILD_NUMBER
   - ps: $xRevision.Node.OwnerDocument.Save($xRevision.Path)
   - ps: Write-Host $xRevision.Path
+  - git status
   - git commit -m 'Revision update by AppVeyor' -- version.props
   - git push --tags --force
