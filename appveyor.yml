@@ -8,7 +8,7 @@ install:
   - ps: $env:APPVEYOR_BUILD_NUMBER = $env:GitVersion_CommitsSinceVersionSource
 
   - ps: $xml = New-Object XML
-  - ps: $xml.Load(".\version.props")
+  - ps: $xml.Load("%APPVEYOR_BUILD_FOLDER%\version.props")
   - ps: $env:major_version =  $xml.SelectSingleNode("/Project/PropertyGroup/MajorVersion").InnerText
 
   - ps: $env:minor_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/MinorVersion" | Select-Object -ExpandProperty Node).InnerText
