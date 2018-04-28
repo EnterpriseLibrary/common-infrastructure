@@ -18,3 +18,9 @@ build:
   project: source\Common.sln
   parallel: true
   verbosity: minimal
+
+  after_build:
+- cmd: scripts\RegisterAssembliesForTesting.bat
+
+after_test:
+- cmd: scripts\RegisterAssembliesForTesting.bat -u
