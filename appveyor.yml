@@ -26,3 +26,6 @@ after_build:
 
 after_test:
 - cmd: scripts\UninstallTestAssemblies.bat
+
+artifacts:
+- path: version.props
