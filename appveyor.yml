@@ -9,6 +9,9 @@ install:
   - ps: $env:minor_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/MinorVersion" | Select-Object -ExpandProperty Node).InnerText
   - ps: $env:release_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/ReleaseVersion" | Select-Object -ExpandProperty Node).InnerText
   - ps: Update-AppveyorBuild -Version "$env:major_version.$env:minor_version.$env:release_version.$env:APPVEYOR_BUILD_NUMBER"
+  - ps: $xRevision = Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/Revision"
+  - ps: $xRevision.Node.InnerText = $env:APPVEYOR_BUILD_NUMBER
+  - ps: $xRevision.Node.OwnerDocument.Save($xRevision.Path)
 
 dotnet_csproj:
   patch: false
@@ -26,9 +29,6 @@ after_build:
 
 after_test:
   - cmd: scripts\UninstallTestAssemblies.bat
-  - ps: $xRevision = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/Revision" | Select-Object -ExpandProperty Node)
-  - ps: $xRevision.InnerText = $env:APPVEYOR_BUILD_NUMBER
-  - ps: $xRevision.OwnerDocument.Save($xRevision.Path)
 
 artifacts:
   - path: version.props
