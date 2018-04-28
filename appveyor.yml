@@ -11,12 +11,6 @@ install:
   - ps: $env:minor_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/MinorVersion" | Select-Object -ExpandProperty Node).InnerText
   - ps: $env:release_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/ReleaseVersion" | Select-Object -ExpandProperty Node).InnerText
   - ps: Update-AppveyorBuild -Version "$env:major_version.$env:minor_version.$env:release_version.$env:APPVEYOR_BUILD_NUMBER"
-  - ps: $xRevision = Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/Revision"
-  - ps: $xRevision.Node.InnerText = $env:APPVEYOR_BUILD_NUMBER
-  - ps: $xRevision.Node.OwnerDocument.Save($xRevision.Path)
-  - ps: Write-Host (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/Revision" | Select-Object -ExpandProperty Node).InnerText
-  - git commit -m 'Revision update by AppVeyor' -- version.props
-  - git push --tags --force
 
 dotnet_csproj:
   patch: false
@@ -36,6 +30,7 @@ after_test:
   - cmd: scripts\UninstallTestAssemblies.bat
 
 on_success:
+  - ps: git checkout master
   - ps: $xRevision = Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/Revision"
   - ps: $xRevision.Node.InnerText = $env:APPVEYOR_BUILD_NUMBER
   - ps: $xRevision.Node.OwnerDocument.Save($xRevision.Path)
