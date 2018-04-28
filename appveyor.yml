@@ -20,7 +20,11 @@ build:
   verbosity: minimal
 
 after_build:
-- cmd: scripts\RegisterAssembliesForTesting.bat
+- cmd: CD scripts
+- cmd: RegisterAssembliesForTesting.bat
+- cmd: CD..
 
 after_test:
-- cmd: scripts\RegisterAssembliesForTesting.bat -u
+- cmd: CD scripts
+- cmd: RegisterAssembliesForTesting.bat -u
+- cmd: CD..

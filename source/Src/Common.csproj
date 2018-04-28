@@ -52,7 +52,7 @@
     <Content Include="..\NuGet\Update-EntlibConfiguration.ps1">
       <Pack>true</Pack>
       <Visible>False</Visible>
-      <PackagePath>tools</PackagePath>
+      <PackagePath></PackagePath>
     </Content>
 
     <Content Include="..\NuGet\tools\SharedCommon\install.ps1">
