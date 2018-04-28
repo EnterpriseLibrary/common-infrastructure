@@ -15,7 +15,7 @@ before_build:
 - cmd: dotnet restore
 
 build:
-  project: source/Common.sln
+  project: **\Common.sln
   parallel: true
   verbosity: minimal
 
