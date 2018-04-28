@@ -13,8 +13,6 @@ install:
   - ps: $xRevision = Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/Revision"
   - ps: $xRevision.Node.InnerText = $env:APPVEYOR_BUILD_NUMBER
   - ps: $xRevision.Node.OwnerDocument.Save($xRevision.Path)
-  - ps: $($env:github_access_token)
-  - ps: $env:github_access_token
 
 dotnet_csproj:
   patch: false
