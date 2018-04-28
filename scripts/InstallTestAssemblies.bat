@@ -1,0 +1,1 @@
+%WINDIR%\Microsoft.NET\Framework\v4.0.30319\installutil /LogToConsole=true "%~dp0\..\source\Tests\Common\bin\Release\net47\EnterpriseLibrary.Common.Tests.dll"

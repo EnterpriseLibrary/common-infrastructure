@@ -20,7 +20,7 @@ build:
   verbosity: minimal
 
 after_build:
-- cmd: %WINDIR%\Microsoft.NET\Framework\v4.0.30319\installutil "source\Tests\Common\bin\Release\net47\EnterpriseLibrary.Common.Tests.dll"
+- cmd: scripts\InstallTestAssemblies.bat
 
 after_test:
-- cmd: %WINDIR%\Microsoft.NET\Framework\v4.0.30319\installutil -u "source\Tests\Common\bin\Release\net47\EnterpriseLibrary.Common.Tests.dll"
+- cmd: scripts\UninstallTestAssemblies.bat
