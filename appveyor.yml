@@ -15,5 +15,6 @@ before_build:
 - cmd: dotnet restore
 
 build:
+  project: source
   parallel: true
   verbosity: minimal
