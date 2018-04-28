@@ -3,14 +3,9 @@ configuration: Release
 platform: Any CPU
 
 install:
-  - choco install gitversion.portable -pre -y
   - ps: gitversion /output buildserver
   - ps: $env:APPVEYOR_BUILD_NUMBER = $env:GitVersion_CommitsSinceVersionSource
-
-  - ps: $xml = New-Object XML
-  - ps: $xml.Load("%APPVEYOR_BUILD_FOLDER%\version.props")
-  - ps: $env:major_version =  $xml.SelectSingleNode("/Project/PropertyGroup/MajorVersion").InnerText
-
+  - ps: $env:major_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/MajorVersion" | Select-Object -ExpandProperty Node).InnerText
   - ps: $env:minor_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/MinorVersion" | Select-Object -ExpandProperty Node).InnerText
   - ps: $env:release_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/ReleaseVersion" | Select-Object -ExpandProperty Node).InnerText
   - ps: (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/Revision" | Select-Object -ExpandProperty Node).InnerText = $env:APPVEYOR_BUILD_NUMBER
