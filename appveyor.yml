@@ -20,11 +20,7 @@ build:
   verbosity: minimal
 
 after_build:
-- cmd: CD scripts
-- cmd: RegisterAssembliesForTesting.bat "..\Source\Tests\Common\bin\Release\net47"
-- cmd: CD..
+- cmd: %WINDIR%\Microsoft.NET\Framework\v4.0.30319\installutil "source\Tests\Common\bin\Release\net47\EnterpriseLibrary.Common.Tests.dll"
 
 after_test:
-- cmd: CD scripts
-- cmd: RegisterAssembliesForTesting.bat -u "..\Source\Tests\Common\bin\Release\net47"
-- cmd: CD..
+- cmd: %WINDIR%\Microsoft.NET\Framework\v4.0.30319\installutil -u "source\Tests\Common\bin\Release\net47\EnterpriseLibrary.Common.Tests.dll"

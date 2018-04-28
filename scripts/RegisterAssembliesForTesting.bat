@@ -82,7 +82,7 @@ if not Exist "%installUtilDir%" goto HELPFW
 @ECHO -----------------------------------------------------------------
 @ECHO.
 pushd %binDir%
-cd ..\Source\Tests\Common\bin\%buildType%\net47
+cd ..\source\Tests\Common\bin\%buildType%\net47
 CD
 if Exist EnterpriseLibrary.Common.Tests.dll installutil %action% /LogToConsole=%logToConsole% EnterpriseLibrary.Common.Tests.dll
 @if errorlevel 1 goto :error
