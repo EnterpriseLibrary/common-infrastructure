@@ -3,8 +3,10 @@ configuration: Release
 platform: Any CPU
 
 install:
-  - ps: $env:build_version = (Select-Xml -Path ".\package.props" -XPath "/Project/PropertyGroup/Version" | Select-Object -ExpandProperty Node).InnerText
-  - ps: Update-AppveyorBuild -Version "$env:build_version.$env:APPVEYOR_BUILD_NUMBER"
+  - ps: $env:major_version = (Select-Xml -Path ".\package.props" -XPath "/Project/PropertyGroup/MajorVersion" | Select-Object -ExpandProperty Node).InnerText
+  - ps: $env:minor_version = (Select-Xml -Path ".\package.props" -XPath "/Project/PropertyGroup/MinorVersion" | Select-Object -ExpandProperty Node).InnerText
+  - ps: $env:release_version = (Select-Xml -Path ".\package.props" -XPath "/Project/PropertyGroup/ReleaseVersion" | Select-Object -ExpandProperty Node).InnerText
+  - ps: Update-AppveyorBuild -Version "$env:major_version.$env:minor_version.$env:release_version.$env:APPVEYOR_BUILD_NUMBER"
 
 dotnet_csproj:
   patch: false
@@ -13,7 +15,7 @@ before_build:
 - cmd: dotnet restore
 
 build:
-  project: Common.sln
+  project: source\Common.sln
   parallel: true
   verbosity: minimal
 
