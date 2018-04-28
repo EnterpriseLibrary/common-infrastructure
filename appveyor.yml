@@ -3,7 +3,8 @@ configuration: Release
 platform: Any CPU
 
 install:
-  - ps: $env:APPVEYOR_BUILD_NUMBER = 2000
+  - choco install gitversion.portable -pre -y
+  - ps: $env:APPVEYOR_BUILD_NUMBER = $env:GitVersion_CommitsSinceVersionSource
   - ps: $env:major_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/MajorVersion" | Select-Object -ExpandProperty Node).InnerText
   - ps: $env:minor_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/MinorVersion" | Select-Object -ExpandProperty Node).InnerText
   - ps: $env:release_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/ReleaseVersion" | Select-Object -ExpandProperty Node).InnerText
