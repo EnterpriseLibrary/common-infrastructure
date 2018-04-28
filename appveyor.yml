@@ -34,5 +34,5 @@ after_test:
 
 on_success:
   - git status
-  - git commit -a -m 'Revision update by AppVeyor'
+  - git commit -am 'Revision update by AppVeyor'
   - git push --tags --force
