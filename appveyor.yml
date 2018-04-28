@@ -2,6 +2,8 @@ image: Visual Studio 2017
 configuration: Release
 platform: Any CPU
 
+skip_tags: true
+
 install:
   - ps: gitversion /output buildserver
   - ps: $env:APPVEYOR_BUILD_NUMBER = $env:GitVersion_CommitsSinceVersionSource
@@ -34,5 +36,6 @@ on_success:
   - ps: $xRevision = Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/Revision"
   - ps: $xRevision.Node.InnerText = $env:APPVEYOR_BUILD_NUMBER
   - ps: $xRevision.Node.OwnerDocument.Save($xRevision.Path)
-  - git commit -m 'Revision update by AppVeyor' .\version.props
-  - git push
+  - git checkout master
+  - git commit -m 'Revision update by AppVeyor' version.props
+  - git push --tags --force
