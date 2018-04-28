@@ -19,7 +19,7 @@ build:
   parallel: true
   verbosity: minimal
 
-  after_build:
+after_build:
 - cmd: scripts\RegisterAssembliesForTesting.bat
 
 after_test:
