@@ -35,5 +35,7 @@ on_success:
   - ps: $xRevision.Node.OwnerDocument.Save($xRevision.Path)
   - ps: Write-Host $xRevision.Path
   - git status
-  - git commit -m 'Revision update by AppVeyor' -- version.props
+  - git add version.props
+  - git status
+  - git commit -m 'Revision update by AppVeyor
   - git push --tags --force
