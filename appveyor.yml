@@ -13,6 +13,7 @@ install:
   - ps: $xRevision = Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/Revision"
   - ps: $xRevision.Node.InnerText = $env:APPVEYOR_BUILD_NUMBER
   - ps: $xRevision.Node.OwnerDocument.Save($xRevision.Path)
+  - ps: $env:github_name
 
 dotnet_csproj:
   patch: false
@@ -36,7 +37,6 @@ on_success:
   - ps: Add-Content "$HOME\.git-credentials" "https://$($env:github_access_token):x-oauth-basic@github.com`n"
   - ps: git config --global user.email "$env:github_email"
   - ps: git config --global user.name "$env:github_name"
-  - ps: $env:github_name
   - git add version.props
   - git commit -m "Revision update by AppVeyor"
   - git push --tags --force
