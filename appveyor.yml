@@ -12,9 +12,9 @@ dotnet_csproj:
   patch: false
 
 before_build:
-- cmd: dotnet restore
+- cmd: dotnet restore "source\Common.sln"
 
 build:
-  project: source
+  project: source\Common.sln
   parallel: true
   verbosity: minimal
