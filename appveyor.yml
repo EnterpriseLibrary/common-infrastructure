@@ -4,16 +4,17 @@ platform: Any CPU
 skip_tags: true
 
 install:
+  - ps: $env:version_file_path = ".\version.props"
   - ps: gitversion /output buildserver
-  - ps: $env:major_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/MajorVersion" | Select-Object -ExpandProperty Node).InnerText
-  - ps: $env:minor_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/MinorVersion" | Select-Object -ExpandProperty Node).InnerText
+  - ps: $env:major_version = (Select-Xml -Path $env:version_file_path -XPath "/Project/PropertyGroup/MajorVersion" | Select-Object -ExpandProperty Node).InnerText
+  - ps: $env:minor_version = (Select-Xml -Path $env:version_file_path -XPath "/Project/PropertyGroup/MinorVersion" | Select-Object -ExpandProperty Node).InnerText
   - ps: $env:release_version = $env:APPVEYOR_BUILD_NUMBER
   - ps: $env:revision = $env:GitVersion_CommitsSinceVersionSource
   - ps: Update-AppveyorBuild -Version "$env:major_version.$env:minor_version.$env:release_version.$env:revision"
-  - ps: $xReleaseVersion = Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/ReleaseVersion"
+  - ps: $xReleaseVersion = Select-Xml -Path $env:version_file_path -XPath "/Project/PropertyGroup/ReleaseVersion"
   - ps: $xReleaseVersion.Node.InnerText = $env:release_version
   - ps: $xReleaseVersion.Node.OwnerDocument.Save($xReleaseVersion.Path)
-  - ps: $xRevision = Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/Revision"
+  - ps: $xRevision = Select-Xml -Path $env:version_file_path -XPath "/Project/PropertyGroup/Revision"
   - ps: $xRevision.Node.InnerText = $env:revision
   - ps: $xRevision.Node.OwnerDocument.Save($xRevision.Path)
 
@@ -43,5 +44,5 @@ on_success:
   - ps: Add-Content "$HOME\.git-credentials" "https://$($env:github_access_token):x-oauth-basic@github.com`n"
   - ps: git config --global user.email "$env:github_email"
   - ps: git config --global user.name "$env:github_name"
-  - git commit -m "Revision update by AppVeyor" -- version.props
+  - git commit -m "Revision update by AppVeyor [ci skip]" -- version.props
   - git push
