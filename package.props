@@ -16,4 +16,10 @@
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <Microsoft_Win32_Registry_Version>4.4.0</Microsoft_Win32_Registry_Version>
+    <System_Configuration_ConfigurationManager_Version>4.4.1</System_Configuration_ConfigurationManager_Version>
+    <Unity_Interception_Version>5.5.2</Unity_Interception_Version>
+  </PropertyGroup>
+
 </Project>

@@ -6,9 +6,7 @@
 
     <AssemblyVersion>$(MajorVersion).0.0.0</AssemblyVersion>
     <FileVersion>$(Version).$(Revision)</FileVersion>
-  </PropertyGroup>
 
-  <PropertyGroup>
     <AssemblyName>EnterpriseLibrary.Common</AssemblyName>
     <RootNamespace>EnterpriseLibrary.Common</RootNamespace>
     <AssemblyTitle>Enterprise Library Shared Library</AssemblyTitle>
@@ -25,23 +23,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Unity.Interception" Version="5.5.2" />
+    <Compile Remove="Instrumentation\Desktop\**" />
+    <EmbeddedResource Remove="Instrumentation\Desktop\**" />
+    <None Remove="Instrumentation\Desktop\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Unity.Interception" Version="$(Unity_Interception_Version)" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0' OR '$(TargetFramework)' == 'netcoreapp2.0'">
-    <PackageReference Include="Microsoft.Win32.Registry" Version="4.4.0" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
+    <PackageReference Include="Microsoft.Win32.Registry" Version="$(Microsoft_Win32_Registry_Version)" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="$(System_Configuration_ConfigurationManager_Version)" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' != 'netstandard2.0' AND '$(TargetFramework)' != 'netcoreapp2.0'">
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="Instrumentation\Desktop\**" />
-    <EmbeddedResource Remove="Instrumentation\Desktop\**" />
-    <None Remove="Instrumentation\Desktop\**" />
   </ItemGroup>
   
   <ItemGroup>
