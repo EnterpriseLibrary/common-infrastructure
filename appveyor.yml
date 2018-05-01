@@ -9,7 +9,7 @@ install:
   - ps: $env:minor_version = (Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/MinorVersion" | Select-Object -ExpandProperty Node).InnerText
   - ps: $env:release_version = $env:APPVEYOR_BUILD_NUMBER
   - ps: $env:revision = $env:GitVersion_CommitsSinceVersionSource
-  - ps: Update-AppveyorBuild -Version "$env:major_version.:$env:minor_version.$env:release_version.$env:revision"
+  - ps: Update-AppveyorBuild -Version "$env:major_version.$env:minor_version.$env:release_version.$env:revision"
   - ps: $xReleaseVersion = Select-Xml -Path ".\version.props" -XPath "/Project/PropertyGroup/ReleaseVersion"
   - ps: $xReleaseVersion.Node.InnerText = $env:release_version
   - ps: $xReleaseVersion.Node.OwnerDocument.Save($xReleaseVersion.Path)
