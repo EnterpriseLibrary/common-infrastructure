@@ -50,7 +50,7 @@
     </Content>
 
     <Content Include="..\..\NuGet\Update-EntlibConfiguration.ps1">
-      <Pack>true</Pack>
+      <Pack>False</Pack>
       <Visible>False</Visible>
       <PackagePath></PackagePath>
     </Content>
