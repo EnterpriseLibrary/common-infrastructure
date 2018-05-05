@@ -18,7 +18,7 @@
     <PackageTags>entlib entlib6 Enterprise Library common core LOB futures OSS</PackageTags>
 
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\..\EntepriseLibrary.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\..\EnterpriseLibrary.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
   </PropertyGroup>
 
