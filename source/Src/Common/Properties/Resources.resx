@@ -322,4 +322,10 @@ The local elements type '{0}' is  incompatible with the parent elements type '{1
   <data name="ExceptionStringEmpty" xml:space="preserve">
     <value>The argument cannot be empty.</value>
   </data>
+  <data name="TypesAreNotAssignable" xml:space="preserve">
+    <value>The type {1} cannot be assigned to variables of type {0}.</value>
+  </data>
+  <data name="UnknownType" xml:space="preserve">
+    <value>&lt;unknown&gt;</value>
+  </data>
 </root>

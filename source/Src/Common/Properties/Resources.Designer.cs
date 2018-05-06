@@ -672,5 +672,23 @@ namespace EnterpriseLibrary.Common.Properties {
                 return ResourceManager.GetString("SystemConfigurationSourceName", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The type {1} cannot be assigned to variables of type {0}..
+        /// </summary>
+        public static string TypesAreNotAssignable {
+            get {
+                return ResourceManager.GetString("TypesAreNotAssignable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;unknown&gt;.
+        /// </summary>
+        public static string UnknownType {
+            get {
+                return ResourceManager.GetString("UnknownType", resourceCulture);
+            }
+        }
     }
 }
