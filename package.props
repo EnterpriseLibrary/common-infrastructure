@@ -17,9 +17,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Microsoft_Win32_Registry_Version>4.4.*</Microsoft_Win32_Registry_Version>
-    <System_Configuration_ConfigurationManager_Version>4.4.*</System_Configuration_ConfigurationManager_Version>
-    <Unity_Interception_Version>5.5.*</Unity_Interception_Version>
+    <MicrosoftWin32RegistryVersion>4.4.*</MicrosoftWin32RegistryVersion>
+    <SystemConfigurationConfigurationManagerVersion>4.4.*</SystemConfigurationConfigurationManagerVersion>
+    <UnityInterceptionVersion>5.5.*</UnityInterceptionVersion>
   </PropertyGroup>
 
 </Project>

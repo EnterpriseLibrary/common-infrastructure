@@ -29,12 +29,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Unity.Interception" Version="$(Unity_Interception_Version)" />
+    <PackageReference Include="Unity.Interception" Version="$(UnityInterceptionVersion)" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0' OR '$(TargetFramework)' == 'netcoreapp2.0'">
-    <PackageReference Include="Microsoft.Win32.Registry" Version="$(Microsoft_Win32_Registry_Version)" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="$(System_Configuration_ConfigurationManager_Version)" />
+    <PackageReference Include="Microsoft.Win32.Registry" Version="$(MicrosoftWin32RegistryVersion)" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="$(SystemConfigurationConfigurationManagerVersion)" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' != 'netstandard2.0' AND '$(TargetFramework)' != 'netcoreapp2.0'">
