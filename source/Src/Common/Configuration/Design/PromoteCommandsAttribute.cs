@@ -2,7 +2,7 @@
 
 using System;
 
-namespace EnterpriseLibrary.Common.Configuration.Design
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design
 {
     /// <summary>
     /// Attribute class that can be oved to offer a properties add-commands to the containing Element View Model.<br/>

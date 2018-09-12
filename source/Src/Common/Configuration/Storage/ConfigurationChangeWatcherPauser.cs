@@ -2,7 +2,7 @@
 
 using System;
 
-namespace EnterpriseLibrary.Common.Configuration.Storage
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Storage
 {
     internal class ConfigurationChangeWatcherPauser : IDisposable
     {

@@ -4,7 +4,7 @@ using System;
 using System.Configuration;
 using System.Threading;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Provides validation for a <see cref="TimeSpan"/> object allowing non-negative spans and 

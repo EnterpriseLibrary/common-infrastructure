@@ -2,9 +2,9 @@
 
 using System;
 using System.IO;
-using EnterpriseLibrary.Common.Properties;
+using Microsoft.Practices.EnterpriseLibrary.Common.Properties;
 
-namespace EnterpriseLibrary.Common.Configuration.Storage
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Storage
 {
     /// <summary>
     /// <para>Represents an <see cref="IConfigurationChangeWatcher"/> that watches a file.</para>

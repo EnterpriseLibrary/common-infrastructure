@@ -2,7 +2,7 @@
 
 using System;
 
-namespace EnterpriseLibrary.Common.Configuration.Design
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design
 {
     /// <summary>
     /// Attribute class used to associate a <see cref="System.Configuration.ConfigurationElement"/> class with an <see cref="ICloneableConfigurationElement"/> implementation.

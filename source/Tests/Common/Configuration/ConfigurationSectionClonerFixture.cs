@@ -3,12 +3,12 @@
 using System;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using EnterpriseLibrary.Common.TestSupport.ContextBase;
-using EnterpriseLibrary.Common.Configuration;
+using Microsoft.Practices.EnterpriseLibrary.Common.TestSupport.ContextBase;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
 using System.Configuration;
 using System.Collections.Specialized;
 
-namespace EnterpriseLibrary.Common.Tests.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests.Configuration
 {
     [TestClass]
     public class ConfigurationSectionClonerFixture : ArrangeActAssert

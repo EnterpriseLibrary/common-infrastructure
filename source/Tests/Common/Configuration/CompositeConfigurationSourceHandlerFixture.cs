@@ -2,14 +2,14 @@
 
 using System;
 using System.Linq;
-using EnterpriseLibrary.Common.TestSupport.ContextBase;
-using EnterpriseLibrary.Common.Configuration;
-using EnterpriseLibrary.Common.Configuration.Tests;
+using Microsoft.Practices.EnterpriseLibrary.Common.TestSupport.ContextBase;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Tests;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Configuration;
-using EnterpriseLibrary.Common.Tests.Configuration.TestObjects;
+using Microsoft.Practices.EnterpriseLibrary.Common.Tests.Configuration.TestObjects;
 
-namespace EnterpriseLibrary.Common.Tests.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests.Configuration
 {
     public abstract class Given_CompositeConfigurationSource : ArrangeActAssert
     {

@@ -1,17 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\..\..\package.props" />
 
   <PropertyGroup>
-    <TargetFrameworks>net45;net46;net47;netstandard2.0;netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>net45;net46;net47;netstandard2.0;netcoreapp2.0;netcoreapp2.1</TargetFrameworks>
 
     <AssemblyVersion>$(MajorVersion).0.0.0</AssemblyVersion>
     <FileVersion>$(Version).$(Revision)</FileVersion>
 
-    <AssemblyName>EnterpriseLibrary.Common</AssemblyName>
-    <RootNamespace>EnterpriseLibrary.Common</RootNamespace>
+    <AssemblyName>$(PreAssemblyName).Common</AssemblyName>
+    <RootNamespace>$(PreAssemblyName).Common</RootNamespace>
     <AssemblyTitle>Enterprise Library Shared Library</AssemblyTitle>
 
-    <PackageId>EnterpriseLibrary.Common</PackageId>
+    <PackageId>$(PrePackageName).Common$(PostPackageName)</PackageId>
     <Title>Enterprise Library - Common Infrastructure</Title>
     <Description>The Enterprise Library Common assembly contains elements that are shared among multiple application blocks. By supplying a set of commonly used functions to all the application blocks, the Common assembly reduces the dependency of one application block on another.</Description>
     <Summary>The Enterprise Library Common assembly contains elements that are shared among multiple application blocks.</Summary>
@@ -32,12 +32,12 @@
     <PackageReference Include="Unity.Interception" Version="$(UnityInterceptionVersion)" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0' OR '$(TargetFramework)' == 'netcoreapp2.0'">
+  <ItemGroup Condition="$(TargetFramework.StartsWith('netstandard')) OR $(TargetFramework.StartsWith('netcoreapp'))">
     <PackageReference Include="Microsoft.Win32.Registry" Version="$(MicrosoftWin32RegistryVersion)" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="$(SystemConfigurationConfigurationManagerVersion)" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' != 'netstandard2.0' AND '$(TargetFramework)' != 'netcoreapp2.0'">
+  <ItemGroup Condition="!$(TargetFramework.StartsWith('netstandard')) AND !$(TargetFramework.StartsWith('netcoreapp'))">
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
   </ItemGroup>
@@ -111,7 +111,7 @@
     </EmbeddedResource>
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0' OR '$(TargetFramework)' == 'netcoreapp2.0'">
+  <ItemGroup Condition="$(TargetFramework.StartsWith('netstandard')) OR $(TargetFramework.StartsWith('netcoreapp'))">
     <Compile Remove="Instrumentation\*.cs" />
   </ItemGroup>
 

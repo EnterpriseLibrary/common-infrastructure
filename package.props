@@ -3,8 +3,12 @@
   
   <PropertyGroup>
     <Version>$(MajorVersion).$(MinorVersion).$(ReleaseVersion)</Version>
+    <PreAssemblyName>Microsoft.Practices.EnterpriseLibrary</PreAssemblyName>
+    <PrePackageName>EnterpriseLibrary</PrePackageName>
+    <PostPackageName>.NetCore</PostPackageName>
     <PackageReleaseNotes>This package is distributed as .NET Standard 2.0, .NET Core 2.0, .NET 4.0, 4.5, 4.6, 4.7 package.</PackageReleaseNotes>
 
+    <PackageVersion>$(Version)-beta</PackageVersion>
     <Authors>Enterprise Library Open Source Project</Authors>
     <Copyright>Copyright © Microsoft 2008</Copyright>
     <PackageIconUrl>https://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>

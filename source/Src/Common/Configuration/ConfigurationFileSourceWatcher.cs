@@ -2,9 +2,9 @@
 
 using System;
 using System.IO;
-using EnterpriseLibrary.Common.Configuration.Storage;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Storage;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Watcher for configuration sections in configuration files.

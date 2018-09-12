@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\..\..\package.props" />
 
   <PropertyGroup>
@@ -8,8 +8,8 @@
     <AssemblyVersion>$(MajorVersion).0.0.0</AssemblyVersion>
     <FileVersion>$(Version).$(Revision)</FileVersion>
 
-    <AssemblyName>EnterpriseLibrary.Common.TestSupport</AssemblyName>
-    <RootNamespace>EnterpriseLibrary.Common.TestSupport</RootNamespace>
+    <AssemblyName>$(PreAssemblyName).Common.TestSupport</AssemblyName>
+    <RootNamespace>$(PreAssemblyName).Common.TestSupport</RootNamespace>
     <AssemblyTitle>Enterprise Library Shared Library Tests</AssemblyTitle>
   </PropertyGroup>
 

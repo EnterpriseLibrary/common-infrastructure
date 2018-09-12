@@ -2,7 +2,7 @@
 
 using System;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Event handler called after a configuration has changed.

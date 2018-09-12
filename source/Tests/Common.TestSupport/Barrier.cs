@@ -3,7 +3,7 @@
 using System;
 using System.Threading;
 
-namespace EnterpriseLibrary.Common.TestSupport
+namespace Microsoft.Practices.EnterpriseLibrary.Common.TestSupport
 {
     public class Barrier
     {

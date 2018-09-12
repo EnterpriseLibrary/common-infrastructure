@@ -3,7 +3,7 @@
 using System;
 using System.ComponentModel;
 
-namespace EnterpriseLibrary.Common.Configuration.Design
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design
 {
     /// <summary>
     /// Attribute that instructs the designtime to make the textbox for a property readonly. <br/>

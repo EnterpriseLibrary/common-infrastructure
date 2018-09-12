@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EnterpriseLibrary.Common.Configuration.Tests
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Tests
 {
     [TestClass]
     public class AssemblyQualifiedTypeNameConverterFixture

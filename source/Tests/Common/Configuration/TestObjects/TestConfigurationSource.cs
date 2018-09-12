@@ -2,11 +2,11 @@
 
 using System;
 using System.Collections.Generic;
-using EnterpriseLibrary.Common.Configuration;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
 using System.Configuration;
 using System.ComponentModel;
 
-namespace EnterpriseLibrary.Common.Tests.Configuration.TestObjects
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests.Configuration.TestObjects
 {
     [ConfigurationElementType(typeof(TestConfigurationSourceElement))]
     public class TestConfigurationSource : IConfigurationSource

@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
 
-namespace EnterpriseLibrary.Common.Instrumentation.Tests
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation.Tests
 {
     partial class PerfCounterInstaller
     {

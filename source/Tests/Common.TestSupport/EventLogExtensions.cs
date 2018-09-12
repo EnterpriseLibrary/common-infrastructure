@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace EnterpriseLibrary.Common.TestSupport
+namespace Microsoft.Practices.EnterpriseLibrary.Common.TestSupport
 {
     public static class EventLogExtensions
     {

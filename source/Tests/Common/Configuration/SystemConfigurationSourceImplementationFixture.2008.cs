@@ -7,7 +7,7 @@ using System.Security.Permissions;
 using System.Security.Policy;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EnterpriseLibrary.Common.Configuration.Tests
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Tests
 {
     /// <summary>
     /// Summary description for SystemConfigurationSourceFixture

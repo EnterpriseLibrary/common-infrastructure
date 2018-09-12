@@ -4,10 +4,10 @@ using System;
 using System.Configuration;
 using System.IO;
 using System.Xml;
-using EnterpriseLibrary.Common.Configuration;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EnterpriseLibrary.Common.Tests.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests.Configuration
 {
     [TestClass]
     public class SaveFileConfigurationFixture

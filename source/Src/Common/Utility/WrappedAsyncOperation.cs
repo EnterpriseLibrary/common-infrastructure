@@ -2,7 +2,7 @@
 
 using System;
 
-namespace EnterpriseLibrary.Common.Utility
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Utility
 {
     /// <summary>
     /// A helper class that provides the code needed to wrap an existing

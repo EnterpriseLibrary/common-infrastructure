@@ -6,7 +6,7 @@ using System.Configuration.Install;
 using System.Reflection;
 using System.Security;
 
-namespace EnterpriseLibrary.Common.Instrumentation
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation
 {
     /// <summary>
     /// Generic installer wrapper around installer builder. Used to find and install 

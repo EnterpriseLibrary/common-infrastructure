@@ -1,10 +1,10 @@
 // Copyright (c) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
 
-using EnterpriseLibrary.Common.Properties;
+using Microsoft.Practices.EnterpriseLibrary.Common.Properties;
 using System;
 using System.ComponentModel;
 
-namespace EnterpriseLibrary.Common.Configuration.Design
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design
 {
     /// <summary>
     /// Represents a localized <see cref="CategoryAttribute"/>.
@@ -62,7 +62,7 @@ namespace EnterpriseLibrary.Common.Configuration.Design
 
     }
 
-#if NETSTANDARD2_0 || NETCOREAPP2_0
+#if NETSTANDARD2_0 || NETCOREAPP2_0 || NETCOREAPP2_1
 
     internal sealed class SRCategoryAttribute : CategoryAttribute
     {

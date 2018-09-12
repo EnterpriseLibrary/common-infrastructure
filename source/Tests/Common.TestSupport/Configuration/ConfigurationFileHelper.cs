@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
-using EnterpriseLibrary.Common.Configuration;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
 
-namespace EnterpriseLibrary.Common.TestSupport.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.TestSupport.Configuration
 {
     public class ConfigurationFileHelper : IDisposable
     {

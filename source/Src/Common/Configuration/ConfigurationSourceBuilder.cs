@@ -3,7 +3,7 @@
 using System.ComponentModel;
 using System.Configuration;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Entry point that is used for programatically building up a configution source.

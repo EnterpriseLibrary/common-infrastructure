@@ -3,7 +3,7 @@
 using System.Collections;
 using System.Threading;
 
-namespace EnterpriseLibrary.Common.Tests
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests
 {
     public static class ThreadStressHelper
     {

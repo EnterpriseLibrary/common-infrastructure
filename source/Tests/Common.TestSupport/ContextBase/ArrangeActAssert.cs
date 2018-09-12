@@ -2,7 +2,7 @@
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EnterpriseLibrary.Common.TestSupport.ContextBase
+namespace Microsoft.Practices.EnterpriseLibrary.Common.TestSupport.ContextBase
 {
     /// <summary>
     /// A base class for tests written in the BDD style that provide standard

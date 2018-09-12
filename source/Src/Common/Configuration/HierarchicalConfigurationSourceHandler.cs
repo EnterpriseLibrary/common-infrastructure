@@ -4,10 +4,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Configuration;
-using EnterpriseLibrary.Common.Properties;
+using Microsoft.Practices.EnterpriseLibrary.Common.Properties;
 using System.Globalization;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Implements hierarchical merge behavior to <see cref="IConfigurationSource"/> implementations.<br/>

@@ -2,7 +2,7 @@
 
 using System;
 
-namespace EnterpriseLibrary.Common.Configuration.Design
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design
 {
     /// <summary>
     /// Attribute class that is used to add a custom add command for a Element View Model.<br/>

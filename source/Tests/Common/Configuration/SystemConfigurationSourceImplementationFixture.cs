@@ -2,11 +2,11 @@
 
 using System.Collections.Generic;
 using System.Configuration;
-using EnterpriseLibrary.Common.Configuration.Storage;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Storage;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace EnterpriseLibrary.Common.Configuration.Tests
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Tests
 {
     /// <summary>
     /// Summary description for SystemConfigurationSourceFixture

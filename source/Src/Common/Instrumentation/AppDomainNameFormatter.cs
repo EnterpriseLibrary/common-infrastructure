@@ -3,7 +3,7 @@
 using System;
 using System.Text.RegularExpressions;
 
-namespace EnterpriseLibrary.Common.Instrumentation
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation
 {
     /// <summary>
     /// Provides the friendly name of the application domain as the prefix in formatting a 

@@ -4,7 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <devdoc>
     /// Represents a genereic enumerator for the NamedElementCollection.

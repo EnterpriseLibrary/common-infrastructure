@@ -3,10 +3,10 @@
 using System;
 using System.Globalization;
 using System.Threading;
-using EnterpriseLibrary.Common.Configuration;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EnterpriseLibrary.Common.Tests.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests.Configuration
 {
     [TestClass]
     public class CustomTimeSpanConverterFixture

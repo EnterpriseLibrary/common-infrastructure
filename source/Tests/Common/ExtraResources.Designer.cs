@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EnterpriseLibrary.Common.Tests {
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace EnterpriseLibrary.Common.Tests {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("EnterpriseLibrary.Common.Tests.ExtraResources", typeof(ExtraResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Microsoft.Practices.EnterpriseLibrary.Common.Tests.ExtraResources", typeof(ExtraResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -5,7 +5,7 @@ using System.Configuration;
 using System.Collections.Generic;
 using System.Xml;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Represents the base class from which all implementations of polymorphic configuration collections must derive. 

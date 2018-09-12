@@ -3,10 +3,10 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration.Install;
-using EnterpriseLibrary.Common.Instrumentation;
+using Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EnterpriseLibrary.Common.Tests.Instrumentation
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests.Instrumentation
 {
     [TestClass]
     public class AbstractInstallerBuilderFixture

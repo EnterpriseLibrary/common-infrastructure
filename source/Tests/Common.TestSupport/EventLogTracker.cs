@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
 
-namespace EnterpriseLibrary.Common.TestSupport
+namespace Microsoft.Practices.EnterpriseLibrary.Common.TestSupport
 {
     /// <summary>
     /// A helper class that encapsulates the gyrations needed to get new

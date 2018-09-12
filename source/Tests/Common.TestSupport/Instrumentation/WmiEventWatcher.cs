@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Management;
 using System.Threading;
 
-namespace EnterpriseLibrary.Common.TestSupport.Instrumentation
+namespace Microsoft.Practices.EnterpriseLibrary.Common.TestSupport.Instrumentation
 {
     public class WmiEventWatcher : IDisposable
     {
@@ -23,7 +23,7 @@ namespace EnterpriseLibrary.Common.TestSupport.Instrumentation
             this.numberOfEventsToWatchFor = numberOfEventsToWatchFor;
 
             WqlEventQuery eventQuery = new WqlEventQuery(query);
-            ManagementScope scope = new ManagementScope(@"\\.\root\EnterpriseLibrary");
+            ManagementScope scope = new ManagementScope(@"\\.\root\Microsoft.Practices.EnterpriseLibrary");
 
             eventWatcher = new ManagementEventWatcher(scope, eventQuery);
             eventWatcher.EventArrived += delegate_EventArrived;

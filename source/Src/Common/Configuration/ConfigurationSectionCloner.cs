@@ -4,10 +4,10 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
-using EnterpriseLibrary.Common.Configuration.Design;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design;
 using System.ComponentModel;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Clones a <see cref="ConfigurationSection"/>.

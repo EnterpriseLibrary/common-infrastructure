@@ -3,10 +3,10 @@
 using System;
 using System.ComponentModel;
 using System.Configuration;
-using EnterpriseLibrary.Common.Configuration.Design;
-using EnterpriseLibrary.Common.Configuration.Design.Validation;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design.Validation;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Represents a <see cref="ConfigurationElement"/> that has a name and type.
@@ -16,7 +16,7 @@ namespace EnterpriseLibrary.Common.Configuration
         private AssemblyQualifiedTypeNameConverter typeConverter = new AssemblyQualifiedTypeNameConverter();
 
         /// <summary>
-        /// Name of the property that holds the type of <see cref="EnterpriseLibrary.Common.Configuration.NameTypeConfigurationElement"/>.
+        /// Name of the property that holds the type of <see cref="Microsoft.Practices.EnterpriseLibrary.Common.Configuration.NameTypeConfigurationElement"/>.
         /// </summary>
         public const string typeProperty = "type";
 

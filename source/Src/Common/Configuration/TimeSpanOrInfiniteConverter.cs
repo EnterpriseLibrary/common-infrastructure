@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Threading;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Converts a <see cref="TimeSpan"/> expressed in as formatted string or as a standard infinite timeout.

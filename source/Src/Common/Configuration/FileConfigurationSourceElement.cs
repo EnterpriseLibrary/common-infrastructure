@@ -2,11 +2,11 @@
 
 using System.ComponentModel;
 using System.Configuration;
-using EnterpriseLibrary.Common.Configuration.Design;
-using EnterpriseLibrary.Common.Configuration.Design.Validation;
-using EnterpriseLibrary.Common.Properties;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design.Validation;
+using Microsoft.Practices.EnterpriseLibrary.Common.Properties;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Represents the configuration settings that describe a <see cref="FileConfigurationSource"/>.

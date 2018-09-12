@@ -2,7 +2,7 @@
 
 using System.Configuration;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// This interface must be implemented by configuration objects for custom providers that rely

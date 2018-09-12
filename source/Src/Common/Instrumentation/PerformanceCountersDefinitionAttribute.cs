@@ -3,7 +3,7 @@
 using System;
 using System.Diagnostics;
 
-namespace EnterpriseLibrary.Common.Instrumentation
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation
 {
     /// <summary>
     /// Defines information needed to install a <see cref="PerformanceCounterCategory"></see>.

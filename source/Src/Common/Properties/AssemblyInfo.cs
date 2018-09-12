@@ -4,8 +4,8 @@ using System.Configuration;
 using System.Runtime.ConstrainedExecution;
 using System.Runtime.InteropServices;
 using System.Security;
-using EnterpriseLibrary.Common.Configuration;
-using EnterpriseLibrary.Common.Configuration.Design;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design;
 
 [assembly: ReliabilityContract(Consistency.WillNotCorruptState, Cer.None)]
 [assembly: AllowPartiallyTrustedCallers]

@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Security.Permissions;
 using System.Threading;
 
-namespace EnterpriseLibrary.Common.TestSupport
+namespace Microsoft.Practices.EnterpriseLibrary.Common.TestSupport
 {
     public class CrossThreadTestRunner
     {

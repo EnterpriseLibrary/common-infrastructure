@@ -4,7 +4,7 @@ using System;
 using System.ComponentModel;
 using System.Globalization;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Represents a configuration converter that converts a byte array to and from a string representation by using base64 encoding.

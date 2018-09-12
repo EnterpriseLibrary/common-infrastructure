@@ -3,7 +3,7 @@
 using System;
 using System.Configuration;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Represents a source for getting configuration information.

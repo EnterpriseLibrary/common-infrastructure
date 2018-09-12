@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
 
-namespace EnterpriseLibrary.Common.Utility
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Utility
 {
     /// <summary>
     /// Resolves strings by returning a constant value.

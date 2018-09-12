@@ -1,9 +1,9 @@
 // Copyright (c) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
 
 using System;
-using EnterpriseLibrary.Common.Properties;
+using Microsoft.Practices.EnterpriseLibrary.Common.Properties;
 
-namespace EnterpriseLibrary.Common.Configuration.Design.Validation
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design.Validation
 {
     ///<summary>
     /// Defines the type of attribute to apply this configuration property or field.
@@ -45,7 +45,7 @@ namespace EnterpriseLibrary.Common.Configuration.Design.Validation
 
         ///<summary>
         /// Creates a validator objects.   This is expected to return a Validator type from
-        /// the EnterpriseLibrary.Configuration.Design namespace.  
+        /// the Microsoft.Practices.EnterpriseLibrary.Configuration.Design namespace.  
         ///</summary>
         ///<returns></returns>
         public object CreateValidator()
@@ -109,7 +109,7 @@ namespace EnterpriseLibrary.Common.Configuration.Design.Validation
 
         ///<summary>
         /// Creates a validator objects.   This is expected to return a Validator type from
-        /// the EnterpriseLibrary.Configuration.Design namespace.  
+        /// the Microsoft.Practices.EnterpriseLibrary.Configuration.Design namespace.  
         ///</summary>
         ///<returns></returns>
         public object CreateValidator()

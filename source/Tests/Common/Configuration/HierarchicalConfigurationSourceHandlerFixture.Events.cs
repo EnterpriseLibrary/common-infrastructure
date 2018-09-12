@@ -2,12 +2,12 @@
 
 using System;
 using System.Collections.Generic;
-using EnterpriseLibrary.Common.Configuration;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
 using System.Configuration;
-using EnterpriseLibrary.Common.Tests.Configuration.TestObjects;
+using Microsoft.Practices.EnterpriseLibrary.Common.Tests.Configuration.TestObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EnterpriseLibrary.Common.Tests.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests.Configuration
 {
     public abstract class Given_HierarchicalConfigurationSourceWithEventListener : Given_HierarchicalConfigurationSourceHandler
     {

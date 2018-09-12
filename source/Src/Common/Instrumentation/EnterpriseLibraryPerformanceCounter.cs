@@ -3,7 +3,7 @@
 using System;
 using System.Diagnostics;
 
-namespace EnterpriseLibrary.Common.Instrumentation
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation
 {
     /// <summary>
     /// Provides a virtual performance counter interface that enables an application to maintain both individually 

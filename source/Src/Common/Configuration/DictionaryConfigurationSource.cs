@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Represents a configuration source that is backed by a dictionary of named objects.

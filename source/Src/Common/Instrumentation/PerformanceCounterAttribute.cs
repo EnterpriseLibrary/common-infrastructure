@@ -3,7 +3,7 @@
 using System;
 using System.Diagnostics;
 
-namespace EnterpriseLibrary.Common.Instrumentation
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation
 {
     /// <summary>
     /// Defines a <see cref="PerformanceCounter"></see>. Used by the reflection-based installers to 

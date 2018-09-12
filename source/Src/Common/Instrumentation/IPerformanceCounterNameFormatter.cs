@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
 
-namespace EnterpriseLibrary.Common.Instrumentation
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation
 {
     /// <summary>
     /// Provides a pluggable way to format the name given to a particular instance of a performance counter.

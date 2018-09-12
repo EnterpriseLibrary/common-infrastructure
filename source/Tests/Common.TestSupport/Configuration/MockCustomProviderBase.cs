@@ -2,7 +2,7 @@
 
 using System.Collections.Specialized;
 
-namespace EnterpriseLibrary.Common.TestSupport.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.TestSupport.Configuration
 {
     public abstract class MockCustomProviderBase
     {

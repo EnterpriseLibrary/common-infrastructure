@@ -2,7 +2,7 @@
 
 using System.Configuration;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Interface used to implement custom clone behavior for a <see cref="ConfigurationElement"/>.

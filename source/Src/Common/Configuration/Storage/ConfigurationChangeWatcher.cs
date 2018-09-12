@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Timers;
 
 
-namespace EnterpriseLibrary.Common.Configuration.Storage
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Storage
 {
     /// <summary>
     /// <para>Represents an <see cref="IConfigurationChangeWatcher"/> that watches a file.</para>

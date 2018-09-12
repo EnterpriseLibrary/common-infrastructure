@@ -3,7 +3,7 @@
 using System;
 using System.Configuration;
 
-namespace EnterpriseLibrary.Common.Configuration.Design
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design
 {
     ///<summary>
     /// Indicates that this assembly handles the <see cref="ConfigurationSection"/>.

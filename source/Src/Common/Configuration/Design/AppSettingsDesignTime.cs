@@ -2,7 +2,7 @@
 
 using System.Configuration;
 
-namespace EnterpriseLibrary.Common.Configuration.Design
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design
 {
 
     ///<summary>
@@ -23,7 +23,7 @@ namespace EnterpriseLibrary.Common.Configuration.Design
             ///<summary>
             ///Type Name of the Section View Model used to display application settings.
             ///</summary>
-            public const string AppSettingsSectionViewModel = "EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.AppSettingsViewModel, EnterpriseLibrary.Configuration.DesignTime";
+            public const string AppSettingsSectionViewModel = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.AppSettingsViewModel, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
         }
 
         /// <summary>

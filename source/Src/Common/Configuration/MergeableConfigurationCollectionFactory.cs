@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.ComponentModel;
-using EnterpriseLibrary.Common.Configuration.Design;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     ///<summary>
     /// Factory for creating <see cref="IMergeableConfigurationElementCollection"/>s.

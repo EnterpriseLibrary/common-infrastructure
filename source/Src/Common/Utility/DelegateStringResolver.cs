@@ -2,7 +2,7 @@
 
 using System;
 
-namespace EnterpriseLibrary.Common.Utility
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Utility
 {
     /// <summary>
     /// Resolves strings by invoking a delegate and returning the resulting value.

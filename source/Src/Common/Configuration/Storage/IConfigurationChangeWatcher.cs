@@ -2,7 +2,7 @@
 
 using System;
 
-namespace EnterpriseLibrary.Common.Configuration.Storage
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Storage
 {
     /// <summary>
     /// <para>Provides a way to watch for changes to configuration in storage.</para>

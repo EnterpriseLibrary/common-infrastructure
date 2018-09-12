@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Text.RegularExpressions;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Generic helper class for custom provider configuration objects.

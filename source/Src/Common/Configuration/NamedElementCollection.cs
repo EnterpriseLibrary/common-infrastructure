@@ -5,7 +5,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Configuration;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Represents a collection of <see cref="NamedConfigurationElement"/> objects.

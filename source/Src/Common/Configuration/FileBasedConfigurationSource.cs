@@ -6,9 +6,9 @@ using System.ComponentModel;
 using System.Configuration;
 using System.Globalization;
 using System.IO;
-using EnterpriseLibrary.Common.Properties;
+using Microsoft.Practices.EnterpriseLibrary.Common.Properties;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Represents the implementation details for file-based configuration sources.

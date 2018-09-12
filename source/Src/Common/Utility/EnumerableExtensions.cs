@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace EnterpriseLibrary.Common.Utility
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Utility
 {
     /// <summary>
     /// Some utility extensions on <see cref="IEnumerable{T}"/> to suppliment

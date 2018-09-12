@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Globalization;
 using System.Linq;
-using EnterpriseLibrary.Common.Properties;
+using Microsoft.Practices.EnterpriseLibrary.Common.Properties;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Implements common behavior for classes that add extended functionality to <see cref="IConfigurationSource"/> implementations.<br/>

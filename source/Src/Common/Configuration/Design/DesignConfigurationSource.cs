@@ -2,9 +2,9 @@
 
 using System;
 using System.IO;
-using EnterpriseLibrary.Common.Properties;
+using Microsoft.Practices.EnterpriseLibrary.Common.Properties;
 
-namespace EnterpriseLibrary.Common.Configuration.Design
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design
 {
     /// <summary>
     /// configuration source to support design-time configuration of <see cref="FileConfigurationSource"/>

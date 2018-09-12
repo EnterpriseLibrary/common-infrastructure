@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Configuration.Install;
 using System.Security;
 
-namespace EnterpriseLibrary.Common.Instrumentation
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation
 {
     /// <summary>
     /// Base class for the reflection-based installers. These reflection-based installers 

@@ -2,7 +2,7 @@
 
 using System;
 
-namespace EnterpriseLibrary.Common.Tests.Configuration.TestObjects
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests.Configuration.TestObjects
 {
     public class CustomPolymorphicObjectData : BasePolymorphicObjectData
     {

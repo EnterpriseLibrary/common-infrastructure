@@ -1,12 +1,12 @@
 // Copyright (c) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
 
 using System.Configuration;
-using EnterpriseLibrary.Common.Configuration;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using EnterpriseLibrary.Common.TestSupport.ContextBase;
-using EnterpriseLibrary.Common.TestSupport;
+using Microsoft.Practices.EnterpriseLibrary.Common.TestSupport.ContextBase;
+using Microsoft.Practices.EnterpriseLibrary.Common.TestSupport;
 
-namespace EnterpriseLibrary.Common.Tests.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests.Configuration
 {
     [TestClass]
     public class CustomConfigurationElementCollectionFixture : ArrangeActAssert
@@ -31,7 +31,7 @@ namespace EnterpriseLibrary.Common.Tests.Configuration
             }
             catch (ConfigurationException ex)
             {
-                Assert.IsTrue(ex.Message.Contains("The type 'EnterpriseLibrary.Common.Configuration.InvalidType, EnterpriseLibrary.Common' defined in the 'InvalidType' configuration source is invalid"));
+                Assert.IsTrue(ex.Message.Contains("The type 'Microsoft.Practices.EnterpriseLibrary.Common.Configuration.InvalidType, Microsoft.Practices.EnterpriseLibrary.Common' defined in the 'InvalidType' configuration source is invalid"));
             }
         }
     }

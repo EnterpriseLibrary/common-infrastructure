@@ -3,7 +3,7 @@
 using System;
 using System.IO;
 
-namespace EnterpriseLibrary.Common.TestSupport
+namespace Microsoft.Practices.EnterpriseLibrary.Common.TestSupport
 {
     /// <summary>
     /// Helps manage embedded resources in test assemblies

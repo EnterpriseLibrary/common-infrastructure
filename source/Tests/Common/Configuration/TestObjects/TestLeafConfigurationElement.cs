@@ -3,7 +3,7 @@
 using System;
 using System.Configuration;
 
-namespace EnterpriseLibrary.Common.Tests.Configuration.TestObjects
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests.Configuration.TestObjects
 {
     public class TestLeafConfigurationElement : ConfigurationElement
     {

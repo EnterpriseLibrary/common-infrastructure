@@ -4,7 +4,7 @@ using System;
 using System.ComponentModel;
 using System.Resources;
 
-namespace EnterpriseLibrary.Common.Configuration.Design
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design
 {
     /// <summary>
     /// A customized version of <see cref="DisplayNameAttribute"/> that can

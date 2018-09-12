@@ -4,7 +4,7 @@ using System;
 using System.Configuration;
 using System.Runtime.Serialization;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Exception class for exceptions that occur when reading configuration metadata from a <see cref="ConfigurationSourceSection"/>.

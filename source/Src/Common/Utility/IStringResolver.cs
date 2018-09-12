@@ -2,7 +2,7 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-namespace EnterpriseLibrary.Common.Utility
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Utility
 {
     /// <summary>
     /// Resolves string objects. 

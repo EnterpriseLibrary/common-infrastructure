@@ -3,10 +3,10 @@
 using System;
 using System.ComponentModel;
 using System.Configuration;
-using EnterpriseLibrary.Common.Properties;
+using Microsoft.Practices.EnterpriseLibrary.Common.Properties;
 using System.Globalization;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Represents a configuration converter that converts a string to <see cref="Type"/> based on a fully qualified name.

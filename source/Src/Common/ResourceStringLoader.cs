@@ -4,7 +4,7 @@ using System;
 using System.Reflection;
 using System.Resources;
 
-namespace EnterpriseLibrary.Common
+namespace Microsoft.Practices.EnterpriseLibrary.Common
 {
     /// <summary>
     /// Helper class to load resources strings.

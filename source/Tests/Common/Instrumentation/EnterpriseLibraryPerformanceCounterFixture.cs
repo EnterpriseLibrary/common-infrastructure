@@ -3,7 +3,7 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EnterpriseLibrary.Common.Instrumentation.Tests
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation.Tests
 {
     [TestClass]
     public class EnterpriseLibraryPerformanceCounterFixture

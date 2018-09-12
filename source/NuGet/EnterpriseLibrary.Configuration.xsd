@@ -503,20 +503,20 @@
   </xs:simpleType>
   <xs:simpleType name="ValidatorData_SchemaType_KeyConstraint">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="EnterpriseLibrary.Validation.Validators.PropertyComparisonValidator, EnterpriseLibrary.Validation" />
-      <xs:enumeration value="EnterpriseLibrary.Validation.Validators.AndCompositeValidator, EnterpriseLibrary.Validation" />
-      <xs:enumeration value="EnterpriseLibrary.Validation.Validators.ContainsCharactersValidator, EnterpriseLibrary.Validation" />
-      <xs:enumeration value="EnterpriseLibrary.Validation.Validators.EnumConversionValidator, EnterpriseLibrary.Validation" />
-      <xs:enumeration value="EnterpriseLibrary.Validation.Validators.RelativeDateTimeValidator, EnterpriseLibrary.Validation" />
-      <xs:enumeration value="EnterpriseLibrary.Validation.Validators.TypeConversionValidator, EnterpriseLibrary.Validation" />
-      <xs:enumeration value="EnterpriseLibrary.Validation.Validators.ObjectCollectionValidator, EnterpriseLibrary.Validation" />
-      <xs:enumeration value="EnterpriseLibrary.Validation.Validators.ObjectValidator, EnterpriseLibrary.Validation" />
-      <xs:enumeration value="EnterpriseLibrary.Validation.Validators.RangeValidator, EnterpriseLibrary.Validation" />
-      <xs:enumeration value="EnterpriseLibrary.Validation.Validators.DateTimeRangeValidator, EnterpriseLibrary.Validation" />
-      <xs:enumeration value="EnterpriseLibrary.Validation.Validators.NotNullValidator, EnterpriseLibrary.Validation" />
-      <xs:enumeration value="EnterpriseLibrary.Validation.Validators.OrCompositeValidator, EnterpriseLibrary.Validation" />
-      <xs:enumeration value="EnterpriseLibrary.Validation.Validators.RegexValidator, EnterpriseLibrary.Validation" />
-      <xs:enumeration value="EnterpriseLibrary.Validation.Validators.StringLengthValidator, EnterpriseLibrary.Validation" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Validation.Validators.PropertyComparisonValidator, Microsoft.Practices.EnterpriseLibrary.Validation" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Validation.Validators.AndCompositeValidator, Microsoft.Practices.EnterpriseLibrary.Validation" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Validation.Validators.ContainsCharactersValidator, Microsoft.Practices.EnterpriseLibrary.Validation" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Validation.Validators.EnumConversionValidator, Microsoft.Practices.EnterpriseLibrary.Validation" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RelativeDateTimeValidator, Microsoft.Practices.EnterpriseLibrary.Validation" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Validation.Validators.TypeConversionValidator, Microsoft.Practices.EnterpriseLibrary.Validation" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Validation.Validators.ObjectCollectionValidator, Microsoft.Practices.EnterpriseLibrary.Validation" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Validation.Validators.ObjectValidator, Microsoft.Practices.EnterpriseLibrary.Validation" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeValidator, Microsoft.Practices.EnterpriseLibrary.Validation" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Validation.Validators.DateTimeRangeValidator, Microsoft.Practices.EnterpriseLibrary.Validation" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Validation.Validators.NotNullValidator, Microsoft.Practices.EnterpriseLibrary.Validation" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Validation.Validators.OrCompositeValidator, Microsoft.Practices.EnterpriseLibrary.Validation" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RegexValidator, Microsoft.Practices.EnterpriseLibrary.Validation" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Validation.Validators.StringLengthValidator, Microsoft.Practices.EnterpriseLibrary.Validation" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="RetryStrategyData_SchemaType_KeyConstraint">
@@ -524,63 +524,63 @@
   </xs:simpleType>
   <xs:simpleType name="CallHandlerData_SchemaType_KeyConstraint">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="EnterpriseLibrary.ExceptionHandling.PolicyInjection.ExceptionCallHandler, EnterpriseLibrary.PolicyInjection" />
-      <xs:enumeration value="EnterpriseLibrary.Logging.PolicyInjection.LogCallHandler, EnterpriseLibrary.PolicyInjection" />
-      <xs:enumeration value="EnterpriseLibrary.PolicyInjection.CallHandlers.PerformanceCounterCallHandler, EnterpriseLibrary.PolicyInjection" />
-      <xs:enumeration value="EnterpriseLibrary.Validation.PolicyInjection.ValidationCallHandler, EnterpriseLibrary.PolicyInjection" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.PolicyInjection.ExceptionCallHandler, Microsoft.Practices.EnterpriseLibrary.PolicyInjection" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Logging.PolicyInjection.LogCallHandler, Microsoft.Practices.EnterpriseLibrary.PolicyInjection" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.PolicyInjection.CallHandlers.PerformanceCounterCallHandler, Microsoft.Practices.EnterpriseLibrary.PolicyInjection" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Validation.PolicyInjection.ValidationCallHandler, Microsoft.Practices.EnterpriseLibrary.PolicyInjection" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="MatchingRuleData_SchemaType_KeyConstraint">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="EnterpriseLibrary.PolicyInjection.MatchingRules.AssemblyMatchingRule, EnterpriseLibrary.PolicyInjection" />
-      <xs:enumeration value="EnterpriseLibrary.PolicyInjection.MatchingRules.CustomAttributeMatchingRule, EnterpriseLibrary.PolicyInjection" />
-      <xs:enumeration value="EnterpriseLibrary.PolicyInjection.MatchingRules.MemberNameMatchingRule, EnterpriseLibrary.PolicyInjection" />
-      <xs:enumeration value="EnterpriseLibrary.PolicyInjection.MatchingRules.MethodSignatureMatchingRule, EnterpriseLibrary.PolicyInjection" />
-      <xs:enumeration value="EnterpriseLibrary.PolicyInjection.MatchingRules.NamespaceMatchingRule, EnterpriseLibrary.PolicyInjection" />
-      <xs:enumeration value="EnterpriseLibrary.PolicyInjection.MatchingRules.ParameterTypeMatchingRule, EnterpriseLibrary.PolicyInjection" />
-      <xs:enumeration value="EnterpriseLibrary.PolicyInjection.MatchingRules.PropertyMatchingRule, EnterpriseLibrary.PolicyInjection" />
-      <xs:enumeration value="EnterpriseLibrary.PolicyInjection.MatchingRules.ReturnTypeMatchingRule, EnterpriseLibrary.PolicyInjection" />
-      <xs:enumeration value="EnterpriseLibrary.PolicyInjection.MatchingRules.TagAttributeMatchingRule, EnterpriseLibrary.PolicyInjection" />
-      <xs:enumeration value="EnterpriseLibrary.PolicyInjection.MatchingRules.TypeMatchingRule, EnterpriseLibrary.PolicyInjection" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.PolicyInjection.MatchingRules.AssemblyMatchingRule, Microsoft.Practices.EnterpriseLibrary.PolicyInjection" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.PolicyInjection.MatchingRules.CustomAttributeMatchingRule, Microsoft.Practices.EnterpriseLibrary.PolicyInjection" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.PolicyInjection.MatchingRules.MemberNameMatchingRule, Microsoft.Practices.EnterpriseLibrary.PolicyInjection" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.PolicyInjection.MatchingRules.MethodSignatureMatchingRule, Microsoft.Practices.EnterpriseLibrary.PolicyInjection" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.PolicyInjection.MatchingRules.NamespaceMatchingRule, Microsoft.Practices.EnterpriseLibrary.PolicyInjection" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.PolicyInjection.MatchingRules.ParameterTypeMatchingRule, Microsoft.Practices.EnterpriseLibrary.PolicyInjection" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.PolicyInjection.MatchingRules.PropertyMatchingRule, Microsoft.Practices.EnterpriseLibrary.PolicyInjection" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.PolicyInjection.MatchingRules.ReturnTypeMatchingRule, Microsoft.Practices.EnterpriseLibrary.PolicyInjection" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.PolicyInjection.MatchingRules.TagAttributeMatchingRule, Microsoft.Practices.EnterpriseLibrary.PolicyInjection" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.PolicyInjection.MatchingRules.TypeMatchingRule, Microsoft.Practices.EnterpriseLibrary.PolicyInjection" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="LogFilterData_SchemaType_KeyConstraint">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="EnterpriseLibrary.Logging.Filters.CategoryFilter, EnterpriseLibrary.Logging" />
-      <xs:enumeration value="EnterpriseLibrary.Logging.Filters.LogEnabledFilter, EnterpriseLibrary.Logging" />
-      <xs:enumeration value="EnterpriseLibrary.Logging.Filters.PriorityFilter, EnterpriseLibrary.Logging" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Logging.Filters.CategoryFilter, Microsoft.Practices.EnterpriseLibrary.Logging" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Logging.Filters.LogEnabledFilter, Microsoft.Practices.EnterpriseLibrary.Logging" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Logging.Filters.PriorityFilter, Microsoft.Practices.EnterpriseLibrary.Logging" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="FormatterData_SchemaType_KeyConstraint">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="EnterpriseLibrary.Logging.Formatters.BinaryLogFormatter, EnterpriseLibrary.Logging" />
-      <xs:enumeration value="EnterpriseLibrary.Logging.Formatters.JsonLogFormatter, EnterpriseLibrary.Logging" />
-      <xs:enumeration value="EnterpriseLibrary.Logging.Formatters.TextFormatter, EnterpriseLibrary.Logging" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.BinaryLogFormatter, Microsoft.Practices.EnterpriseLibrary.Logging" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.JsonLogFormatter, Microsoft.Practices.EnterpriseLibrary.Logging" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.TextFormatter, Microsoft.Practices.EnterpriseLibrary.Logging" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="TraceListenerData_SchemaType_KeyConstraint">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="EnterpriseLibrary.Logging.Database.FormattedDatabaseTraceListener, EnterpriseLibrary.Logging.Database" />
-      <xs:enumeration value="EnterpriseLibrary.Logging.TraceListeners.RollingFlatFileTraceListener, EnterpriseLibrary.Logging" />
-      <xs:enumeration value="EnterpriseLibrary.Logging.TraceListeners.EmailTraceListener, EnterpriseLibrary.Logging" />
-      <xs:enumeration value="EnterpriseLibrary.Logging.TraceListeners.MsmqTraceListener, EnterpriseLibrary.Logging" />
-      <xs:enumeration value="EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener, EnterpriseLibrary.Logging" />
-      <xs:enumeration value="EnterpriseLibrary.Logging.TraceListeners.XmlTraceListener, EnterpriseLibrary.Logging" />
-      <xs:enumeration value="EnterpriseLibrary.Logging.TraceListeners.FormattedEventLogTraceListener, EnterpriseLibrary.Logging" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Logging.Database.FormattedDatabaseTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging.Database" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.RollingFlatFileTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.EmailTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.MsmqTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.XmlTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedEventLogTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="ExceptionHandlerData_SchemaType_KeyConstraint">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="EnterpriseLibrary.ExceptionHandling.ReplaceHandler, EnterpriseLibrary.ExceptionHandling" />
-      <xs:enumeration value="EnterpriseLibrary.ExceptionHandling.WrapHandler, EnterpriseLibrary.ExceptionHandling" />
-      <xs:enumeration value="EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler, EnterpriseLibrary.ExceptionHandling.Logging" />
-      <xs:enumeration value="EnterpriseLibrary.ExceptionHandling.WCF.FaultContractExceptionHandler, EnterpriseLibrary.ExceptionHandling.WCF" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ReplaceHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WrapHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.FaultContractExceptionHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="ConfigurationSourceElement_SchemaType_KeyConstraint">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="EnterpriseLibrary.Common.Configuration.FileConfigurationSource, EnterpriseLibrary.Common" />
-      <xs:enumeration value="EnterpriseLibrary.Common.Configuration.SystemConfigurationSource, EnterpriseLibrary.Common" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Common.Configuration.FileConfigurationSource, Microsoft.Practices.EnterpriseLibrary.Common" />
+      <xs:enumeration value="Microsoft.Practices.EnterpriseLibrary.Common.Configuration.SystemConfigurationSource, Microsoft.Practices.EnterpriseLibrary.Common" />
     </xs:restriction>
   </xs:simpleType>
   <xs:complexType name="nameValueElementCollectionAdd">

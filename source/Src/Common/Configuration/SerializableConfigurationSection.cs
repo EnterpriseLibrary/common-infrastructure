@@ -6,7 +6,7 @@ using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Represents a configuration section that can be serialized and deserialized to XML.

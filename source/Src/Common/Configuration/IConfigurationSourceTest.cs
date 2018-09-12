@@ -2,7 +2,7 @@
 
 using System.Collections.Generic;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// This interface supports the Enterprise Library infrastructure and is not intended to be used directly from your code.

@@ -2,9 +2,9 @@
 
 using System;
 using System.Resources;
-using EnterpriseLibrary.Common.Properties;
+using Microsoft.Practices.EnterpriseLibrary.Common.Properties;
 
-namespace EnterpriseLibrary.Common.Configuration.Design
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design
 {
     /// <summary>
     /// Attribute used to decorate a designtime View Model element with an executable command. E.g. a context menu item that allows

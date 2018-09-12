@@ -2,7 +2,7 @@
 
 using System.Configuration;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Declaratively instructs the .NET Framework to perform time validation on a configuration property. This class cannot be inherited.

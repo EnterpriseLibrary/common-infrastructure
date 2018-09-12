@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace EnterpriseLibrary.Common
+namespace Microsoft.Practices.EnterpriseLibrary.Common
 {
     /// <summary>
     /// This class provides an engine to process a string that contains

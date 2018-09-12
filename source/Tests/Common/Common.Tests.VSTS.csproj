@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\..\..\package.props" />
 
   <PropertyGroup>
@@ -8,8 +8,8 @@
     <AssemblyVersion>$(MajorVersion).0.0.0</AssemblyVersion>
     <FileVersion>$(Version).$(Revision)</FileVersion>
 
-    <AssemblyName>EnterpriseLibrary.Common.Tests</AssemblyName>
-    <RootNamespace>EnterpriseLibrary.Common.Tests</RootNamespace>
+    <AssemblyName>$(PreAssemblyName).Common.Tests</AssemblyName>
+    <RootNamespace>$(PreAssemblyName).Common.Tests</RootNamespace>
     <AssemblyTitle>Enterprise Library Shared Library Tests</AssemblyTitle>
   </PropertyGroup>
 
@@ -26,9 +26,9 @@
 
   <ItemGroup>
     <Reference Include="System.Configuration" />
-	<Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Management" />
-	<Reference Include="System.Security" />
+    <Reference Include="System.Security" />
   </ItemGroup>
 
   <ItemGroup>
@@ -64,7 +64,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ExtraResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    
+
     <EmbeddedResource Update="Properties\Resources.resx">
       <SubType>Designer</SubType>
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,7 +90,7 @@
     <None Include="test.exe.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="EnterpriseLibrary.Common.Tests.dll.config">
+    <None Include="$(AssemblyName).dll.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

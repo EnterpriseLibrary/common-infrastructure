@@ -4,7 +4,7 @@ using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace EnterpriseLibrary.Common.Instrumentation.Tests
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation.Tests
 {
     [TestClass]
     public class EnterpriseLibraryPerformanceCounterFactoryFixture

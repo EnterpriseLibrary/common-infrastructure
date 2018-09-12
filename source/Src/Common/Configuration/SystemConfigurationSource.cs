@@ -4,10 +4,10 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Security;
-using EnterpriseLibrary.Common.Configuration.Storage;
-using EnterpriseLibrary.Common.Properties;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Storage;
+using Microsoft.Practices.EnterpriseLibrary.Common.Properties;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Represents an <see cref="IConfigurationSource"/> that retrieves the configuration information from the 
@@ -187,7 +187,7 @@ namespace EnterpriseLibrary.Common.Configuration
         {
             try
             {
-#if !NETSTANDARD2_0 && !NETCOREAPP2_0
+#if !NETSTANDARD2_0 && !NETCOREAPP2_0 && !NETCOREAPP2_1
                 return AppDomain.CurrentDomain.SetupInformation.ConfigurationFile;
 #else
                 //ToDo: Find the most correct solution

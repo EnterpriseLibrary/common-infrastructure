@@ -1,10 +1,10 @@
 // Copyright (c) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
 
 using System;
-using EnterpriseLibrary.Common.Instrumentation;
+using Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EnterpriseLibrary.Common.Tests.Instrumentation
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests.Instrumentation
 {
     [TestClass]
     public class PerformanceCounterInstanceNameFixture

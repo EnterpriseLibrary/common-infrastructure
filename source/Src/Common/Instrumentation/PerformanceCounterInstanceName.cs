@@ -2,7 +2,7 @@
 
 using System.Diagnostics;
 
-namespace EnterpriseLibrary.Common.Instrumentation
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation
 {
     /// <summary>
     /// Constructs an instance name for a <see cref="PerformanceCounter"></see> following embedded

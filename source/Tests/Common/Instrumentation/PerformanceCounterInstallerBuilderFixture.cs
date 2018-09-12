@@ -3,11 +3,11 @@
 using System;
 using System.Configuration.Install;
 using System.Diagnostics;
-using EnterpriseLibrary.Common.Tests;
-using EnterpriseLibrary.Common.Tests.Properties;
+using Microsoft.Practices.EnterpriseLibrary.Common.Tests;
+using Microsoft.Practices.EnterpriseLibrary.Common.Tests.Properties;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EnterpriseLibrary.Common.Instrumentation.Tests
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation.Tests
 {
     [TestClass]
     public class PerformanceCounterInstallerBuilderFixture

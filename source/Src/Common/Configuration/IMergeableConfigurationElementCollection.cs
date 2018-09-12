@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Interface that allows a <see cref="ConfigurationElementCollection"/> to be merged.

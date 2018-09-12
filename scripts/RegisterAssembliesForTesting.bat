@@ -84,7 +84,7 @@ if not Exist "%installUtilDir%" goto HELPFW
 pushd %binDir%
 cd ..\source\Tests\Common\bin\%buildType%\net47
 CD
-if Exist EnterpriseLibrary.Common.Tests.dll installutil %action% /LogToConsole=%logToConsole% EnterpriseLibrary.Common.Tests.dll
+if Exist Microsoft.Practices.EnterpriseLibrary.Common.Tests.dll installutil %action% /LogToConsole=%logToConsole% Microsoft.Practices.EnterpriseLibrary.Common.Tests.dll
 @if errorlevel 1 goto :error
 popd
 

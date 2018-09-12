@@ -2,10 +2,10 @@
 
 using System;
 using System.Threading;
-using EnterpriseLibrary.Common.Configuration.Storage;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Storage;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EnterpriseLibrary.Common.Configuration.Tests
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Tests
 {
     [TestClass]
     public class ConfigurationChangeWatcherFixture

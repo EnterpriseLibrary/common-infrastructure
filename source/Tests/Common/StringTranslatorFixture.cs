@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Resources;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EnterpriseLibrary.Common.Tests
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests
 {
     [TestClass]
     public class StringTranslatorFixture
@@ -14,7 +14,7 @@ namespace EnterpriseLibrary.Common.Tests
         {
             StringTranslator translator = new StringTranslator();
             ResourceManager manager = new ResourceManager(
-                "EnterpriseLibrary.Common.Tests.Properties.Resources",
+                "Microsoft.Practices.EnterpriseLibrary.Common.Tests.Properties.Resources",
                 Assembly.GetExecutingAssembly());
             Assert.AreEqual("Foo Text", translator.Translate(manager, "FooLabel"));
         }
@@ -24,7 +24,7 @@ namespace EnterpriseLibrary.Common.Tests
         {
             StringTranslator translator = new StringTranslator();
             ResourceManager manager = new ResourceManager(
-                "EnterpriseLibrary.Common.Tests.Properties.Resources",
+                "Microsoft.Practices.EnterpriseLibrary.Common.Tests.Properties.Resources",
                 Assembly.GetExecutingAssembly());
             Assert.IsNull(translator.Translate(manager, "UnknownLabel"));
         }

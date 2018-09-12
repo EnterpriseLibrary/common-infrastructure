@@ -4,14 +4,14 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading;
-using EnterpriseLibrary.Common.Configuration;
-using EnterpriseLibrary.Common.Configuration.Storage;
-using EnterpriseLibrary.Common.Configuration.Tests;
-using EnterpriseLibrary.Common.Tests.Configuration.TestObjects;
-using EnterpriseLibrary.Common.TestSupport.ContextBase;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Storage;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Tests;
+using Microsoft.Practices.EnterpriseLibrary.Common.Tests.Configuration.TestObjects;
+using Microsoft.Practices.EnterpriseLibrary.Common.TestSupport.ContextBase;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EnterpriseLibrary.Common.Tests.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests.Configuration
 {
     public abstract class Given_ConfigurationFileWithSectionsInOtherConfigurationSources : ArrangeActAssert
     {

@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Configuration.Install;
 using System.Diagnostics;
 
-namespace EnterpriseLibrary.Common.Instrumentation.Tests
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation.Tests
 {
     [RunInstaller(true)]
     public partial class PerfCounterInstaller : Installer

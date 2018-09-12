@@ -2,7 +2,7 @@
 
 using System.Configuration;
 
-namespace EnterpriseLibrary.Common.Configuration.Tests
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Tests
 {
     public class DummySection : SerializableConfigurationSection
     {

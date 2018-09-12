@@ -8,9 +8,9 @@ using System.Globalization;
 using System.Reflection;
 using System.Resources;
 using System.Security;
-using EnterpriseLibrary.Common.Properties;
+using Microsoft.Practices.EnterpriseLibrary.Common.Properties;
 
-namespace EnterpriseLibrary.Common.Instrumentation
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation
 {
     /// <summary>
     /// Add event log source definitions for classes that have been attributed

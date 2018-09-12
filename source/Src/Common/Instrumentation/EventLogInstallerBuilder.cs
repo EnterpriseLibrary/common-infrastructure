@@ -6,7 +6,7 @@ using System.Configuration.Install;
 using System.Diagnostics;
 using System.Security;
 
-namespace EnterpriseLibrary.Common.Instrumentation
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation
 {
     /// <summary>
     /// Add event log source definitions for classes that have been attributed

@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace EnterpriseLibrary.Common.Instrumentation
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation
 {
     /// <summary>
     /// Factory for <see cref="EnterpriseLibraryPerformanceCounter"></see>s. Individual <see cref="PerformanceCounter"></see>

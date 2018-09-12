@@ -3,10 +3,10 @@
 using System;
 using System.Configuration;
 using System.Xml;
-using EnterpriseLibrary.Common.Properties;
+using Microsoft.Practices.EnterpriseLibrary.Common.Properties;
 using System.Globalization;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Represents a collection of <see cref="NameTypeConfigurationElement"/> objects.

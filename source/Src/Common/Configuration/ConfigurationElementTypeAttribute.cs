@@ -1,9 +1,9 @@
 // Copyright (c) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
 
 using System;
-using EnterpriseLibrary.Common.Properties;
+using Microsoft.Practices.EnterpriseLibrary.Common.Properties;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Indicates the configuration object type that is used for the attributed object.
@@ -15,7 +15,7 @@ namespace EnterpriseLibrary.Common.Configuration
         private string typeName;
 
         /// <summary>
-        /// Initialize a new instance of the <see cref="EnterpriseLibrary.Common.Configuration.ConfigurationElementTypeAttribute"/> class.
+        /// Initialize a new instance of the <see cref="Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ConfigurationElementTypeAttribute"/> class.
         /// </summary>
         public ConfigurationElementTypeAttribute()
         {

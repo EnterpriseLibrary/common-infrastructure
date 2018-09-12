@@ -2,7 +2,7 @@
 
 using System.ComponentModel;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Type converter used to work around enums with enums wrongly marked as "flags".

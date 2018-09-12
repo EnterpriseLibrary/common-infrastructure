@@ -2,7 +2,7 @@
 
 using System.Collections.Specialized;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Represents the configuration settings for a custom provider.

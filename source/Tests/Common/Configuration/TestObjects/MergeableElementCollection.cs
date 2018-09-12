@@ -2,10 +2,10 @@
 
 using System.Collections.Generic;
 using System.Configuration;
-using EnterpriseLibrary.Common.Configuration;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
 using System;
 
-namespace EnterpriseLibrary.Common.Tests.Configuration.TestObjects
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests.Configuration.TestObjects
 {
     [ConfigurationCollection(typeof(TestLeafConfigurationElement))]
     public class MergeableElementCollection : ConfigurationElementCollection, IMergeableConfigurationElementCollection

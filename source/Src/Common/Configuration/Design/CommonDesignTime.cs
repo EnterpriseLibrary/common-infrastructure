@@ -2,7 +2,7 @@
 
 using System.ComponentModel;
 
-namespace EnterpriseLibrary.Common.Configuration.Design
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design
 {
 
     /// <summary>
@@ -18,37 +18,37 @@ namespace EnterpriseLibrary.Common.Configuration.Design
             /// <summary>
             /// Type name of the WizardCommand class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public static string WizardCommand = "EnterpriseLibrary.Configuration.Design.ViewModel.Commands.WizardCommand, EnterpriseLibrary.Configuration.DesignTime";
+            public static string WizardCommand = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.Commands.WizardCommand, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the AddSatelliteProviderCommand class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string AddSatelliteProviderCommand = "EnterpriseLibrary.Configuration.Design.ViewModel.Commands.AddSatelliteProviderCommand, EnterpriseLibrary.Configuration.DesignTime";
+            public const string AddSatelliteProviderCommand = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.Commands.AddSatelliteProviderCommand, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the AddApplicationBlockCommand class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string AddApplicationBlockCommand = "EnterpriseLibrary.Configuration.Design.ViewModel.Commands.AddApplicationBlockCommand, EnterpriseLibrary.Configuration.DesignTime";
+            public const string AddApplicationBlockCommand = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.Commands.AddApplicationBlockCommand, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the TypePickingCollectionElementAddCommand class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string AddProviderUsingTypePickerCommand = "EnterpriseLibrary.Configuration.Design.ViewModel.TypePickingCollectionElementAddCommand, EnterpriseLibrary.Configuration.DesignTime";
+            public const string AddProviderUsingTypePickerCommand = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.TypePickingCollectionElementAddCommand, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the ExportAdmTemplateCommand class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string ExportAdmTemplateCommand = "EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.ExportAdmTemplateCommand, EnterpriseLibrary.Configuration.DesignTime";
+            public const string ExportAdmTemplateCommand = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.ExportAdmTemplateCommand, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the HiddenCommand class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string HiddenCommand = "EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.Commands.HiddenCommand, EnterpriseLibrary.Configuration.DesignTime";
+            public const string HiddenCommand = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.Commands.HiddenCommand, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the AddInstrumentationBlockCommand class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string AddInstrumentationApplicationBlockCommand = "EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.AddInstrumentationBlockCommand, EnterpriseLibrary.Configuration.DesignTime";
+            public const string AddInstrumentationApplicationBlockCommand = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.AddInstrumentationBlockCommand, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
         }
 
         /// <summary>
@@ -59,12 +59,12 @@ namespace EnterpriseLibrary.Common.Configuration.Design
             /// <summary>
             /// Type name of the DatePickerEditor class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string DatePickerEditor = "EnterpriseLibrary.Configuration.Design.ComponentModel.Editors.DatePickerEditor, EnterpriseLibrary.Configuration.DesignTime";
+            public const string DatePickerEditor = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ComponentModel.Editors.DatePickerEditor, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the ElementCollectionEditor, declared class in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string CollectionEditor = "EnterpriseLibrary.Configuration.Design.ComponentModel.Editors.ElementCollectionEditor, EnterpriseLibrary.Configuration.DesignTime";
+            public const string CollectionEditor = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ComponentModel.Editors.ElementCollectionEditor, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the UITypeEditor class, declared in the System.Drawing Assembly.
@@ -74,12 +74,12 @@ namespace EnterpriseLibrary.Common.Configuration.Design
             /// <summary>
             /// Type name of the TypeSelectionEditor, declared class in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string TypeSelector = "EnterpriseLibrary.Configuration.Design.ComponentModel.Editors.TypeSelectionEditor, EnterpriseLibrary.Configuration.DesignTime";
+            public const string TypeSelector = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ComponentModel.Editors.TypeSelectionEditor, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the FilteredFileNameEditor, declared class in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string FilteredFilePath = "EnterpriseLibrary.Configuration.Design.ComponentModel.Editors.FilteredFileNameEditor, EnterpriseLibrary.Configuration.DesignTime";
+            public const string FilteredFilePath = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ComponentModel.Editors.FilteredFileNameEditor, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the FrameworkElement, declared class in the PresentationFramework Assembly.
@@ -89,17 +89,17 @@ namespace EnterpriseLibrary.Common.Configuration.Design
             /// <summary>
             /// Type name of the MultilineTextEditor class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string MultilineText = "EnterpriseLibrary.Configuration.Design.ComponentModel.Editors.MultilineTextEditor, EnterpriseLibrary.Configuration.DesignTime";
+            public const string MultilineText = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ComponentModel.Editors.MultilineTextEditor, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the PopupTextEditor class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string PopupTextEditor = "EnterpriseLibrary.Configuration.Design.ComponentModel.Editors.PopupTextEditor, EnterpriseLibrary.Configuration.DesignTime";
+            public const string PopupTextEditor = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ComponentModel.Editors.PopupTextEditor, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the FlagsEditor class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string Flags = "EnterpriseLibrary.Configuration.Design.ComponentModel.Editors.FlagsEditor, EnterpriseLibrary.Configuration.DesignTime";
+            public const string Flags = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ComponentModel.Editors.FlagsEditor, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the RegexTypeEditor class, declared in the System.Design Assembly.
@@ -114,12 +114,12 @@ namespace EnterpriseLibrary.Common.Configuration.Design
             /// <summary>
             /// Type name of the TemplateEditor class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string TemplateEditor = "EnterpriseLibrary.Logging.Configuration.Design.Formatters.TemplateEditor, EnterpriseLibrary.Configuration.DesignTime";
+            public const string TemplateEditor = "Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.Design.Formatters.TemplateEditor, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the IEnvironmentalOverridesEditor interface, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string OverridesEditor = "EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.IEnvironmentalOverridesEditor, EnterpriseLibrary.Configuration.DesignTime";
+            public const string OverridesEditor = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.IEnvironmentalOverridesEditor, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
         }
 
         /// <summary>
@@ -130,36 +130,36 @@ namespace EnterpriseLibrary.Common.Configuration.Design
             /// <summary>
             /// Type name of the TypeNameProperty class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string TypeNameProperty = "EnterpriseLibrary.Configuration.Design.ViewModel.TypeNameProperty, EnterpriseLibrary.Configuration.DesignTime";
+            public const string TypeNameProperty = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.TypeNameProperty, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the ConfigurationProperty class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
             public const string ConfigurationPropertyViewModel =
-                "EnterpriseLibrary.Configuration.Design.ViewModel.ConfigurationProperty, EnterpriseLibrary.Configuration.DesignTime";
+                "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.ConfigurationProperty, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the SectionViewModel class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string SectionViewModel = "EnterpriseLibrary.Configuration.Design.ViewModel.SectionViewModel, EnterpriseLibrary.Configuration.DesignTime";
+            public const string SectionViewModel = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.SectionViewModel, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the CollectionEditorContainedElementProperty class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
             public const string CollectionEditorContainedElementProperty =
-                "EnterpriseLibrary.Configuration.Design.ViewModel.CollectionEditorContainedElementProperty, EnterpriseLibrary.Configuration.DesignTime";
+                "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.CollectionEditorContainedElementProperty, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the CollectionEditorContainedElementReferenceProperty class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
             public const string CollectionEditorContainedElementReferenceProperty =
-                "EnterpriseLibrary.Configuration.Design.ViewModel.CollectionEditorContainedElementReferenceProperty, EnterpriseLibrary.Configuration.DesignTime";
+                "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.CollectionEditorContainedElementReferenceProperty, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the RedirectedSectionSourceProperty class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
             public const string RedirectedSectionSourceProperty = 
-                "EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.RedirectedSectionSourceProperty, EnterpriseLibrary.Configuration.DesignTime";
+                "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.RedirectedSectionSourceProperty, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
         }
 
         /// <summary>
@@ -171,7 +171,7 @@ namespace EnterpriseLibrary.Common.Configuration.Design
             /// Type name of the RedirectedSectionNameConverter class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
             public const string RedirectedSectionNameConverter =
-                "EnterpriseLibrary.Configuration.Design.ComponentModel.Converters.RedirectedSectionNameConverter, EnterpriseLibrary.Configuration.DesignTime";
+                "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ComponentModel.Converters.RedirectedSectionNameConverter, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
         }
 
@@ -204,39 +204,39 @@ namespace EnterpriseLibrary.Common.Configuration.Design
             /// <summary>
             /// Type name of the FileWritableValidator class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string FileWritableValidator = "EnterpriseLibrary.Configuration.Design.Validation.FileWritableValidator, EnterpriseLibrary.Configuration.DesignTime";
+            public const string FileWritableValidator = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.Validation.FileWritableValidator, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the FilePathValidator class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string FileValidator = "EnterpriseLibrary.Configuration.Design.Validation.FilePathValidator, EnterpriseLibrary.Configuration.DesignTime";
+            public const string FileValidator = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.Validation.FilePathValidator, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the FilePathExistsValidator class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string PathExistsValidator = "EnterpriseLibrary.Configuration.Design.Validation.FilePathExistsValidator, EnterpriseLibrary.Configuration.DesignTime";
+            public const string PathExistsValidator = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.Validation.FilePathExistsValidator, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the RequiredFieldValidator class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string RequiredFieldValidator = "EnterpriseLibrary.Configuration.Design.Validation.RequiredFieldValidator, EnterpriseLibrary.Configuration.DesignTime";
+            public const string RequiredFieldValidator = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.Validation.RequiredFieldValidator, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the TypeValidator class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
             public const string TypeValidator =
-                "EnterpriseLibrary.Configuration.Design.Validation.TypeValidator, EnterpriseLibrary.Configuration.DesignTime";
+                "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.Validation.TypeValidator, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the SelectedSourceValidator class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
             public const string SelectedSourceValidator =
-                "EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.SelectedSourceValidator, EnterpriseLibrary.Configuration.DesignTime";
+                "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.SelectedSourceValidator, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
 
             /// <summary>
             /// Type name of the NameValueCollectionValidator class, declared in the Configuration.DesignTime Assembly.
             /// </summary>
-            public const string NameValueCollectionValidator = "EnterpriseLibrary.Configuration.Design.Validation.NameValueCollectionValidator, EnterpriseLibrary.Configuration.DesignTime";
+            public const string NameValueCollectionValidator = "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.Validation.NameValueCollectionValidator, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
         }
 
         /// <summary>
@@ -247,17 +247,17 @@ namespace EnterpriseLibrary.Common.Configuration.Design
             /// <summary>
             /// Type name for the LoggingSettings section.
             /// </summary>
-            public const string LoggingSettings = "EnterpriseLibrary.Logging.Configuration.LoggingSettings, EnterpriseLibrary.Logging";
+            public const string LoggingSettings = "Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.LoggingSettings, Microsoft.Practices.EnterpriseLibrary.Logging";
 
             /// <summary>
             /// Type name for the DatabaseSettings section.
             /// </summary>
-            public const string DatabaseSettings = "EnterpriseLibrary.Data.Configuration.DatabaseSettings, EnterpriseLibrary.Data";
+            public const string DatabaseSettings = "Microsoft.Practices.EnterpriseLibrary.Data.Configuration.DatabaseSettings, Microsoft.Practices.EnterpriseLibrary.Data";
 
             /// <summary>
             /// Type name for the ExceptionHandlingSettings section.
             /// </summary>
-            public const string ExceptionHandlingSettings = "EnterpriseLibrary.ExceptionHandling.Configuration.ExceptionHandlingSettings, EnterpriseLibrary.ExceptionHandling";
+            public const string ExceptionHandlingSettings = "Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Configuration.ExceptionHandlingSettings, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling";
 
         }
     }

@@ -2,9 +2,9 @@
 
 using System.Configuration;
 using System.Xml;
-using EnterpriseLibrary.Common.Configuration.Design;
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design;
 
-namespace EnterpriseLibrary.Common.Configuration
+namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
 {
     /// <summary>
     /// Represents a named <see cref="ConfigurationElement"/> where the name is the key to a collection.
