@@ -21,8 +21,8 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <MicrosoftWin32RegistryVersion>4.4.*</MicrosoftWin32RegistryVersion>
-    <SystemConfigurationConfigurationManagerVersion>4.4.*</SystemConfigurationConfigurationManagerVersion>
+    <MicrosoftWin32RegistryVersion>4.5.*</MicrosoftWin32RegistryVersion>
+    <SystemConfigurationConfigurationManagerVersion>4.5.*</SystemConfigurationConfigurationManagerVersion>
   </PropertyGroup>
   
   <PropertyGroup>
