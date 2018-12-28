@@ -187,7 +187,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
         {
             try
             {
-#if !NETSTANDARD2_0 && !NETCOREAPP2_0 && !NETCOREAPP2_1
+#if !NETSTANDARD2_0 && !NETCOREAPP2_0 && !NETCOREAPP2_1 && !NETCOREAPP2_2
                 return AppDomain.CurrentDomain.SetupInformation.ConfigurationFile;
 #else
                 //ToDo: Find the most correct solution

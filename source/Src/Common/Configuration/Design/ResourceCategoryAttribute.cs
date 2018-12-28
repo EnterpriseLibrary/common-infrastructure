@@ -62,7 +62,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design
 
     }
 
-#if NETSTANDARD2_0 || NETCOREAPP2_0 || NETCOREAPP2_1
+#if NETSTANDARD2_0 || NETCOREAPP2_0 || NETCOREAPP2_1 || NETCOREAPP2_2
 
     internal sealed class SRCategoryAttribute : CategoryAttribute
     {
