@@ -7,7 +7,10 @@ using System.Security;
 using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
 using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design;
 
+#if !NET6_0 && !NET7_0
 [assembly: ReliabilityContract(Consistency.WillNotCorruptState, Cer.None)]
+#endif
+
 [assembly: AllowPartiallyTrustedCallers]
 
 [assembly: ComVisible(false)]
