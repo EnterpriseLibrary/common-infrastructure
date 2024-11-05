@@ -21,7 +21,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design
         }
 
         /// <summary>
-        /// Initialize a new instance of the <see cref="SRCategoryAttribute"/> class with the <see cref="Type"/> containing the resources and the resource name.
+        /// Initialize a new instance of the class with the <see cref="Type"/> containing the resources and the resource name.
         /// </summary>
         /// <param name="category">The resources string name.</param>
         /// <param name="resourceType">The <see cref="Type"/> containing the resource strings.</param>
