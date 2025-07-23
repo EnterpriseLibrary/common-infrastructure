@@ -12,7 +12,7 @@
     <PackageVersion>$(Version)$(SemanticVersionSuffix)</PackageVersion>
     <Authors>Enterprise Library Open Source Project</Authors>
     <Copyright>Copyright © Microsoft 2008</Copyright>
-    <PackageIconUrl>https://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
+    <!--<PackageIconUrl>https://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>-->
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/EnterpriseLibrary/common-infrastructure</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
