@@ -20,7 +20,7 @@ Param(
 
 # set up the replacements
 $replacements = @()
-$replacements += ,@( '(?<assembly>Microsoft\.Practices\.EnterpriseLibrary\.[^,]+),\s*Version=\d+\.\d+\.\d+\.\d+', '${assembly}, Version=6.0.0.0' )
+$replacements += ,@( '(?<assembly>Microsoft\.Practices\.EnterpriseLibrary\.[^,]+),\s*Version=\d+\.\d+\.\d+\.\d+', '${assembly}, Version=7.0.0.0' )
 $replacements += ,@( 'Microsoft\.Practices\.EnterpriseLibrary\.WindowsAzure\.TransientFaultHandling\.Configuration\.RetryPolicyConfigurationSettings,\s*Microsoft\.Practices\.EnterpriseLibrary\.WindowsAzure\.TransientFaultHandling', 'EnterpriseLibrary.TransientFaultHandling.Configuration.RetryPolicyConfigurationSettings, EnterpriseLibrary.TransientFaultHandling.Configuration' )
 $replacements += ,@( 'Microsoft\.Practices\.EnterpriseLibrary\.ExceptionHandling\.PolicyInjection\.ExceptionCallHandler,\s*Microsoft\.Practices\.EnterpriseLibrary\.ExceptionHandling', 'EnterpriseLibrary.ExceptionHandling.PolicyInjection.ExceptionCallHandler, EnterpriseLibrary.PolicyInjection' )
 $replacements += ,@( 'Microsoft\.Practices\.EnterpriseLibrary\.Logging\.PolicyInjection\.LogCallHandler,\s*Microsoft\.Practices\.EnterpriseLibrary\.Logging', 'EnterpriseLibrary.Logging.PolicyInjection.LogCallHandler, EnterpriseLibrary.PolicyInjection' )
