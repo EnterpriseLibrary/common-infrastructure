@@ -250,6 +250,8 @@ namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests.Configuration
         {
             section = CompositeSource.GetSection(FileSourceDummySectionName) as DummySection;
 
+            Thread.Sleep(2000);
+
             //File.SetLastWriteTime(@"ExternalFileSource.config", DateTime.Now);
             File.AppendAllText(@"ExternalFileSource.config", Environment.NewLine);
 
