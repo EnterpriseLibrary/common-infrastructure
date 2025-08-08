@@ -117,7 +117,7 @@
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <DebugType>Full</DebugType>
+    <DebugType>portable</DebugType>
     <OutputPath>$(SolutionDir)..\bin\Debug\</OutputPath>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
@@ -162,7 +162,7 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningLevel>4</WarningLevel>
     <RunFxCop>true</RunFxCop>
-    <DebugType>full</DebugType>
+    <DebugType>portable</DebugType>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
 </Project>
