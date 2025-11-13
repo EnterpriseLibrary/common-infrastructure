@@ -1,32 +1,43 @@
 <Project>
-  <Import Project="version.props" />
-  
-  <PropertyGroup>
-    <Version>$(MajorVersion).$(MinorVersion).$(ReleaseVersion)</Version>
-    <PreAssemblyName>Microsoft.Practices.EnterpriseLibrary</PreAssemblyName>
-    <PrePackageName>EnterpriseLibrary</PrePackageName>
-    <PostPackageName>.NetCore</PostPackageName>
-    <PackageReleaseNotes>This package is distributed as .NET Standard 2.0, .NET Core 2.0, .NET 4.0, 4.5, 4.6, 4.7 package.</PackageReleaseNotes>
+	<Import Project="version.props" />
 
-    <PackageVersion>$(Version)$(SemanticVersionSuffix)</PackageVersion>
-    <Authors>Enterprise Library Open Source Project</Authors>
-    <Copyright>Copyright © Microsoft 2008</Copyright>
-    <!--<PackageIconUrl>https://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>-->
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/EnterpriseLibrary/common-infrastructure</PackageProjectUrl>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+	<ItemGroup>
+		<Content Include="..\..\..\build\Assets\icon.png">
+			<Pack>true</Pack>
+			<Visible>False</Visible>
+			<PackagePath></PackagePath>
+		</Content>
+	</ItemGroup>
 
-    <RepositoryUrl>https://github.com/EnterpriseLibrary/common-infrastructure</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-  </PropertyGroup>
+	<PropertyGroup>
+		<Version>$(MajorVersion).$(MinorVersion).$(ReleaseVersion)</Version>
+		<PreAssemblyName>Microsoft.Practices.EnterpriseLibrary</PreAssemblyName>
+		<PrePackageName>EnterpriseLibrary</PrePackageName>
+		<PostPackageName>.NetCore</PostPackageName>
+		<PackageReleaseNotes>This package is distributed as .NET Standard 2.0, .NET Core 2.0, .NET 4.0, 4.5, 4.6, 4.7 package.</PackageReleaseNotes>
 
-  <PropertyGroup>
-    <MicrosoftWin32RegistryVersion>4.5.*</MicrosoftWin32RegistryVersion>
-    <SystemConfigurationConfigurationManagerVersion>4.5.*</SystemConfigurationConfigurationManagerVersion>
-  </PropertyGroup>
-  
-  <PropertyGroup>
-    <UnityInterceptionVersion>5.5.*</UnityInterceptionVersion>
-  </PropertyGroup>
+		<IncludeSymbols>True</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+		<PackageVersion>$(Version)$(SemanticVersionSuffix)</PackageVersion>
+		<Authors>Enterprise Library Open Source Project</Authors>
+		<Copyright>Copyright © Microsoft 2008</Copyright>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/EnterpriseLibrary/common-infrastructure</PackageProjectUrl>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+
+		<RepositoryUrl>https://github.com/EnterpriseLibrary/common-infrastructure</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<MicrosoftWin32RegistryVersion>4.5.*</MicrosoftWin32RegistryVersion>
+		<SystemConfigurationConfigurationManagerVersion>4.5.*</SystemConfigurationConfigurationManagerVersion>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<UnityInterceptionVersion>5.5.*</UnityInterceptionVersion>
+	</PropertyGroup>
 
 </Project>
